@@ -9,6 +9,7 @@ class App extends Component{
       return(
          <div className="intro">
          	<h1>EXODUS</h1>
+            <img src="www/img/EXODUS_LOGO_BG01-1024x461.png" />
          </div>
       );
    }

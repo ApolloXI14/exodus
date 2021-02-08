@@ -5,6 +5,14 @@ class World extends Component {
     return (
       <div>
         <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
       </div>
     );
   };

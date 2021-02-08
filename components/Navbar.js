@@ -28,7 +28,9 @@ class NavigationBar extends Component {
     const url = window.location.pathname;
     return (
       <Navbar className="nav-background" expand="md" dark>
-        <NavbarBrand href="/">Infinite Exodus</NavbarBrand>
+        <NavbarBrand href="/">
+          <img src="www/img/EXODUS_LOGO01-e1590806106934.png" alt="Exodus Nav Logo" />
+        </NavbarBrand>
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.open} navbar>
           <Nav className="ml-auto" navbar>

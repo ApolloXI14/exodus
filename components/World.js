@@ -13,13 +13,13 @@ const planets = [
     src: "../www/img/background/Earth-world-concept.jpg",
     caption: "Earth",
     altText: "Planet Earth",
-    url: "/world/earth"
+    url: "/earth"
   },
   {
     src: "../www/img/background/Exodus-world-concept.jpg",
     caption: "Exodus",
     altText: "Planet Exodus",
-    url: "/world/exodus"
+    url: "/exodus"
   }
 ];
 

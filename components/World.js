@@ -73,7 +73,7 @@ class World extends Component {
               <img
                 src={planet.src}
                 alt={planet.altText}
-                style={styles.image}
+                className="image"
               />
             </Link>
             <CarouselCaption captionHeader={planet.caption} />
@@ -82,7 +82,7 @@ class World extends Component {
     });
 
     return (
-      <div style={styles.carousel}>
+      <div className="carousel">
         <h1 className="text-center">Choose your Path</h1>
         <Carousel
           activeIndex={this.state.activeIndex}
@@ -102,17 +102,5 @@ class World extends Component {
     );
   };
 };
-
-const styles = {
-  image: {
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "40%"
-  },
-  carousel: {
-    marginTop: "10px"
-  }
-}
 
 export default World;

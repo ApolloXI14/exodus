@@ -6,6 +6,8 @@ import Story from './components/Story';
 import Gallery from './components/Gallery';
 import Community from './components/Community';
 import World from './components/World';
+import Earth from './components/worlds/Earth';
+import Exodus from './components/worlds/Exodus';
 import Default from './components/Default';
 
 class App extends Component{
@@ -16,7 +18,9 @@ class App extends Component{
          	<h1>EXODUS</h1>
             <img src="www/img/EXODUS_LOGO_BG01-1024x461.png" />
             <Switch>
-               <Route path="/world" component={World} />
+               <Route path="/world/earth" component={Earth} />
+               <Route path="/world/exodus" component={Exodus} />
+               <Route exact path="/world" component={World} />
                <Route path="/story" component={Story} />
                <Route path="/gallery" component={Gallery} />
                <Route path="/community" component={Community} />

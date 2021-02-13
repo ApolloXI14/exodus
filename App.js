@@ -15,8 +15,8 @@ class App extends Component{
       return(
          <div className="intro">
             <NavigationBar />
-         	<h1>EXODUS</h1>
-            <img src="www/img/EXODUS_LOGO_BG01-1024x461.png" />
+         	{/* <h1>EXODUS</h1>
+            <img src="www/img/EXODUS_LOGO_BG01-1024x461.png" /> */}
             <Switch>
                <Route path="/earth" component={Earth} />
                <Route path="/exodus" component={Exodus} />

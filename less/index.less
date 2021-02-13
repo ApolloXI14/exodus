@@ -1,3 +1,12 @@
+/*
+	NOTE: Currently organized based on which component the styles are applied to.
+	This is because I originally was naming the classes based on what they were applied to.
+	However, given that I've renamed the classes to reflect what they do, rather than what
+	they are for, we can reorganize this file later.  
+	
+	EX. putting bg-white and bg-black together, putting mt-10 and mt-15 together, etc.
+*/
+
 html body {
 	height: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../www/img/background/background.jpg) no-repeat center center;
@@ -12,24 +21,21 @@ html body {
 .active-tab {
 	color: white !important;
 }
-.nav-background {
+.bg-black {
 	background-color: black;
 }
 
 
-// World main Styles
+// World Styles
 .image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 40%;
 }
-.carousel {
+.mt-10 {
 	margin-top: 10px;
 }
-
-
-// World.earth Styles
 // // Class ".earth-container" not working (background image not showing),
 // // styles are written in-line for now
 // .earth-container {
@@ -40,17 +46,15 @@ html body {
 // 	background-attachment: fixed;
 // 	color: white;
 // }
-.earth-title {
+.text-white {
 	color: white;
 }
-.earth-content {
+.text-light-gray {
 	color: lightgray;
 }
-.earth-nav-links {
+.mt-15 {
 	margin-top: 15px;
 }
-.earth-hr-tags {
+.bg-white {
 	background-color: white;
 }
-
-// World.exodus Styles

@@ -82,7 +82,7 @@ class World extends Component {
     });
 
     return (
-      <div className="carousel">
+      <div className="mt-10">
         <h1 className="text-center">Choose your Path</h1>
         <Carousel
           activeIndex={this.state.activeIndex}

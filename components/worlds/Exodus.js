@@ -20,12 +20,12 @@ class Exodus extends Component {
           backgroundAttachment: "fixed"
         }}
       >
-        <h1 className="earth-title">THE WORLD OF EXODUS</h1>
+        <h1 className="text-white">THE WORLD OF EXODUS</h1>
 
         <br />
 
-        <div className="earth-content">
-          <h5 className="earth-nav-links">
+        <div className="text-light-gray">
+          <h5 className="mt-15">
             <Nav className="justify-content-center">
               <NavItem>
                 <NavLink disabled href="#">Races</NavLink>
@@ -49,6 +49,8 @@ class Exodus extends Component {
             </Nav>
           </h5>
 
+          <br />
+
           {/* Convert to Navlinks later (scroll-links) */}
           <h5 className="text-center">SHADARRIN – BALDEMING – JIRAN</h5>
 
@@ -64,8 +66,8 @@ class Exodus extends Component {
           </p>
 
           <br />
-          <hr className="earth-hr-tags" />
-          <hr className="earth-hr-tags" />
+          <hr className="bg-white" />
+          <hr className="bg-white" />
           <br />
           
           <h5 className="text-center">SHADARRIN</h5>
@@ -107,7 +109,7 @@ class Exodus extends Component {
             clockwork gear-styled prosthetics and accessories.
           </p>
 
-          <hr className="earth-hr-tags" />
+          <hr className="bg-white" />
 
           <h5 className="text-center">BALDEMING</h5>
 
@@ -135,7 +137,7 @@ class Exodus extends Component {
             else nearby when hunger strikes.  
           </p>
 
-          <hr className="earth-hr-tags" />
+          <hr className="bg-white" />
 
           <h5 className="text-center">JIRAN</h5>
 

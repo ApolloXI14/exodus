@@ -20,12 +20,12 @@ class Earth extends Component {
           backgroundAttachment: "fixed"
         }}
       >
-        <h1 className="earth-title">GREETINGS PIONEER – WELCOME TO U.S.B.</h1>
+        <h1 className="text-white">GREETINGS PIONEER – WELCOME TO U.S.B.</h1>
 
         <br />
 
-        <div className="text-center earth-content">
-          <h5 className="earth-nav-links">
+        <div className="text-center text-light-gray">
+          <h5 className="mt-15">
             <Nav className="justify-content-center">
               <NavItem>
                 <NavLink disabled href="#">U.S.B.</NavLink>
@@ -45,8 +45,12 @@ class Earth extends Component {
             </Nav>
           </h5>
 
-          <hr className="earth-hr-tags" />
-          <hr className="earth-hr-tags" />
+          <br />
+
+          <hr className="bg-white" />
+          <hr className="bg-white" />
+
+          <br />
 
           <p>GREETINGS, PIONEER – WELCOME TO U.S.B.</p>
 

@@ -64,20 +64,20 @@ class World extends Component {
   render() {
     const slides = planets.map(planet => {
       return (
-          <CarouselItem
-            onExiting={() => this.setState({ animating: true })}
-            onExited={() => this.setState({ animating: false })}
-            key={planet.src}
-          > 
-            <Link to={planet.url}>
-              <img
-                src={planet.src}
-                alt={planet.altText}
-                className="image"
-              />
-            </Link>
-            <CarouselCaption captionHeader={planet.caption} />
-          </CarouselItem>
+        <CarouselItem
+          onExiting={() => this.setState({ animating: true })}
+          onExited={() => this.setState({ animating: false })}
+          key={planet.src}
+        > 
+          <Link to={planet.url}>
+            <img
+              src={planet.src}
+              alt={planet.altText}
+              className="image"
+            />
+          </Link>
+          <CarouselCaption captionHeader={planet.caption} />
+        </CarouselItem>
       );
     });
 

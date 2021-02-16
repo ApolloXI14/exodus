@@ -7,21 +7,32 @@ import {
   NavItem,
   NavLink,
   Collapse,
-  Container
+  Dropdown,
+  DropdownItem,
+  DropdownToggle,
+  DropdownMenu
 } from 'reactstrap';
 
 class NavigationBar extends Component {
   constructor(props) {
     super(props);
     this.toggleNav = this.toggleNav.bind(this);
+    this.toggleDropdown = this.toggleDropdown.bind(this);
     this.state = {
-      open: false
+      navOpen: false,
+      dropDownOpen: false
     }
   };
 
   toggleNav() {
     this.setState({
-      open: !this.state.open
+      navOpen: !this.state.navOpen
+    });
+  };
+
+  toggleDropdown() {
+    this.setState({
+      dropDownOpen: !this.state.dropDownOpen
     });
   };
 
@@ -33,8 +44,21 @@ class NavigationBar extends Component {
           <img src="www/img/EXODUS_LOGO01-e1590806106934.png" alt="Exodus Nav Logo" />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNav} />
-        <Collapse isOpen={this.state.open} navbar>
+        <Collapse isOpen={this.state.navOpen} navbar>
           <Nav className="ml-auto" navbar>
+
+            {/* Dropdown Refactor */}
+            <Dropdown nav isOpen={this.state.dropDownOpen} toggle={this.toggleDropdown}>
+              <DropdownToggle nav caret className="px-3">
+                World
+              </DropdownToggle>
+              <DropdownMenu className="dropdown-menu">
+                <DropdownItem href="/earth" className="dropdown-item">U.S.B.</DropdownItem>
+                <DropdownItem href="/exodus" className="dropdown-item">Exodus</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+
+
             <NavItem className="px-3">
               <NavLink href="/world" className={ url !== "/world" ? "" : "active-tab"}>
                 World

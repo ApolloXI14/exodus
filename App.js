@@ -1,25 +1,41 @@
 import React, { Component } from 'react';
+import World from './components/World.js';
+import Story from './components/Story.js';
+import Gallery from './components/Gallery.js';
+import Community from './components/Community.js';
 //import Navbar from './components/Navbar';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import PhotoNavbar from './components/PhotoNavbar';
 
 
 
-class App extends Component{
-   render(){
+class App extends React.PureComponent{
+    constructor(props) {
+      super(props);
+      this.state = {
+         showNavbar: false
+      };
+    }
+    componentDidMount(props) {
+      console.log('EXODUS MOUNTED');
+      this.setState({
+        showNavbar: true
+      });
+    }
+   render(props){ 
       return(
          <div className="intro">
-            <div id="logoDiv">
-               <img id="exodusLogo" src="www/img/EXODUS_LOGO_BG01-1024x461.png" />
-            </div>
-            <div id="imgsDiv-flex">
-               <img id="exodusLogo" src="www/img/World-Link-Image.png" />
-               <img id="exodusLogo" src="www/img/Story-Link-Image.png" />
-               <img id="exodusLogo" src="www/img/Gallery-Link-Image.png" />
-               <img id="exodusLogo" src="www/img/Community-Link-Image.png" />
-            </div>
+            
+            <Switch>
+                  <Route exact path="/world" component={World}/>
+                  <Route exact path="/story" component={Story}/>
+                  <Route exact path="/gallery" component={Gallery}/>
+                  <Route exact path="/community" component={Community}/>
+               </Switch>
+            <PhotoNavbar showNavbar={this.state.showNavbar} />
          </div>
       );
    }
 }
 
-export default App;
+export default withRouter(App);

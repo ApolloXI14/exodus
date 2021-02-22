@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom';
 import styles from '../less/World.less'
 
 class World extends Component{
-	constructor(props) { 
-		super(props);
-		this.state = {
-
-		};
-	}
 	componentDidMount(props) { 
 	     console.log('WORLD COMP MOUNTED');
 	}

@@ -3,23 +3,21 @@ import World from './components/World.js';
 import Story from './components/Story.js';
 import Gallery from './components/Gallery.js';
 import Community from './components/Community.js';
-//import Navbar from './components/Navbar';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import PhotoNavbar from './components/PhotoNavbar';
-
-
 
 class App extends React.PureComponent{
     constructor(props) {
       super(props);
       this.state = {
-         showNavbar: false
+         showPhotoNavbar: true
       };
     }
-    componentDidMount(props) {
-      console.log('EXODUS MOUNTED');
+    componentDidUpdate(props) {
+      let location = this.props.location.pathname.split('/');
+      let val = location[location.length-1];
       this.setState({
-        showNavbar: true
+        showPhotoNavbar: val ? false : true
       });
     }
    render(props){ 
@@ -32,7 +30,7 @@ class App extends React.PureComponent{
                   <Route exact path="/gallery" component={Gallery}/>
                   <Route exact path="/community" component={Community}/>
                </Switch>
-            <PhotoNavbar showNavbar={this.state.showNavbar} />
+            {this.state.showPhotoNavbar && (<PhotoNavbar />)}
          </div>
       );
    }

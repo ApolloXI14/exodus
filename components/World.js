@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import styles from '../less/World.less'
 
 class World extends Component {
   render() {

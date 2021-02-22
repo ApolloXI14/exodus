@@ -30,7 +30,9 @@ class App extends React.PureComponent{
                   <Route exact path="/gallery" component={Gallery}/>
                   <Route exact path="/community" component={Community}/>
                </Switch>
+            <div id="photoNavbar">
             {this.state.showPhotoNavbar && (<PhotoNavbar />)}
+            </div>
          </div>
       );
    }

@@ -5,6 +5,9 @@ import Gallery from './components/Gallery.js';
 import Community from './components/Community.js';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import PhotoNavbar from './components/PhotoNavbar';
+import 'bootstrap/dist/css/bootstrap.css';
+import NavigationBar from './components/Navbar';
+import Default from './components/Default';
 
 class App extends React.PureComponent{
     constructor(props) {
@@ -23,7 +26,7 @@ class App extends React.PureComponent{
    render(props){ 
       return(
          <div className="intro">
-            
+            <NavigationBar />
             <Switch>
                   <Route exact path="/world" component={World}/>
                   <Route exact path="/story" component={Story}/>

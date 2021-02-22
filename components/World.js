@@ -2,16 +2,22 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import styles from '../less/World.less'
 
-class World extends Component{
-	componentDidMount(props) { 
-	     console.log('WORLD COMP MOUNTED');
-	}
-   render(){
-      return(
-         <div id="worldCompDiv">
-          	WORLD COMPONENT
-		</div>
-      );
-   }
-}
+class World extends Component {
+  render() {
+    return (
+      <div>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+        <h1>World component</h1>
+      </div>
+    );
+  };
+};
+
 export default World;

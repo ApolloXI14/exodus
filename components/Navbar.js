@@ -6,11 +6,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Collapse,
-  Dropdown,
-  DropdownItem,
-  DropdownToggle,
-  DropdownMenu
+  Collapse
 } from 'reactstrap';
 
 class NavigationBar extends Component {
@@ -46,19 +42,6 @@ class NavigationBar extends Component {
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.navOpen} navbar>
           <Nav className="ml-auto" navbar>
-
-            {/* Dropdown Refactor */}
-            <Dropdown nav isOpen={this.state.dropDownOpen} toggle={this.toggleDropdown}>
-              <DropdownToggle nav caret className="px-3">
-                World
-              </DropdownToggle>
-              <DropdownMenu className="dropdown-menu">
-                <DropdownItem href="/earth" className="dropdown-item">U.S.B.</DropdownItem>
-                <DropdownItem href="/exodus" className="dropdown-item">Exodus</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-
-
             <NavItem className="px-3">
               <NavLink href="/world" className={ url !== "/world" ? "" : "active-tab"}>
                 World

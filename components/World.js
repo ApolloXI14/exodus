@@ -14,10 +14,10 @@ class World extends Component {
         </div>
 
         <div className="bottom-image-container">
-          <div className="bottom-image-text">Exodus</div>
           <a href='/exodus'>
             <img src="../www/img/background/Exodus-world-concept.jpg" className="bottom-image" />
           </a>
+          <div className="bottom-image-text">Exodus</div>
         </div>
 
       </div>

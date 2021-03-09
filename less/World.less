@@ -1,25 +1,51 @@
 .world-container {
   margin-top: 20px;
-  // margin-bottom: 20px;
+  position: relative;
 }
 
+.top-image-container {
+  color: darkgray;
+  transition: all 0.3s linear;
+  filter: brightness(80%);
+}
+.top-image-container:hover {
+  color: white;
+  filter: brightness(110%);
+}
+.top-image-text {
+  position: absolute;
+  z-index: 1;
+  padding: 35px;
+  font-size: 2.5em;
+}
 .top-image {
   clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
   width: 100%;
   position: absolute;
-  filter: brightness(80%);
-}
-.top-image:hover {
-  filter: brightness(100%);
+  transition: all 0.3s linear;
 }
 
+.bottom-image-container {
+  color: darkgray;
+  transition: all 0.3s linear;
+  filter: brightness(80%);
+}
+.bottom-image-container:hover {
+  color: white;
+  filter: brightness(110%);
+}
+.bottom-image-text {
+  position: absolute;
+  z-index: 1;
+  padding: 35px;
+  font-size: 2.5em;
+  bottom: 0;
+  right: 0;
+}
 .bottom-image {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
   width: 100%;
-  filter: brightness(80%);
-}
-.bottom-image:hover {
-  filter: brightness(100%);
+  transition: all 0.3s linear;
 }
 
 /*

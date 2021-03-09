@@ -6,6 +6,7 @@ import {
   NavLink
 } from 'reactstrap';
 import { Link } from 'react-scroll';
+import styles from '../../less/Exodus.less';
 
 class Exodus extends Component {
   render() {

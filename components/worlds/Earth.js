@@ -5,6 +5,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import styles from '../../less/Earth.less';
 
 class Earth extends Component {
   render() {

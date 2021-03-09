@@ -1,13 +1,25 @@
+.world-container {
+  margin-top: 20px;
+  // margin-bottom: 20px;
+}
+
 .top-image {
   clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
   width: 100%;
   position: absolute;
+  filter: brightness(80%);
+}
+.top-image:hover {
+  filter: brightness(100%);
 }
 
 .bottom-image {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
   width: 100%;
-  position: relative;
+  filter: brightness(80%);
+}
+.bottom-image:hover {
+  filter: brightness(100%);
 }
 
 /*

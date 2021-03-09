@@ -4,15 +4,13 @@ import styles from '../less/World.less';
 class World extends Component {
   render() {
     return (
-      <div>
-        <img
-          src="../www/img/background/Earth-world-concept.jpg"
-          className="top-image"
-        />
-        <img 
-          src="../www/img/background/Exodus-world-concept.jpg"
-          className="bottom-image"
-        />
+      <div className="world-container">
+        <a href='/earth' data-inf='U.S.B.'>
+          <img src="../www/img/background/Earth-world-concept.jpg" className="top-image" />
+        </a>
+        <a href='/exodus' data-inf='Exodus'>
+          <img src="../www/img/background/Exodus-world-concept.jpg" className="bottom-image" />
+        </a>
       </div>
     );
   };

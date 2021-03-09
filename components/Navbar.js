@@ -8,6 +8,7 @@ import {
   NavLink,
   Collapse
 } from 'reactstrap';
+import styles from '../less/Navbar.less';
 
 class NavigationBar extends Component {
   constructor(props) {

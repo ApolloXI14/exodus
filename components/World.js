@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '../less/World.less';
 
 class World extends Component {
   render() {
@@ -6,19 +7,11 @@ class World extends Component {
       <div>
         <img
           src="../www/img/background/Earth-world-concept.jpg"
-          style={{
-            clipPath: "polygon(100% 0%, 0% 100%, 0% 0%)",
-            width: "100%",
-            position: "absolute",
-          }}
+          className="top-image"
         />
         <img 
           src="../www/img/background/Exodus-world-concept.jpg"
-          style={{
-            clipPath: "polygon(100% 0%, 0% 100%, 100% 100%)",
-            width: "100%",
-            position: "relative",
-          }}
+          className="bottom-image"
         />
       </div>
     );

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import {
   Container,
   Nav,
-  NavItem,
-  NavLink
+  NavItem
 } from 'reactstrap';
 import styles from '../../less/Earth.less';
 import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 class Earth extends Component {
   constructor(props) {
@@ -16,24 +16,52 @@ class Earth extends Component {
     this.svm = this.svm.bind(this);
     this.db = this.db.bind(this);
     this.state = {
-      renderedPage: ""
+      renderedPage: "",
+      usb: false,
+      nio: false,
+      svm: false,
+      db: false
     };
   };
 
   usb() {
-    this.setState({ renderedPage: "USB" });
+    this.setState({
+      renderedPage: "USB",
+      usb: true,
+      nio: false,
+      svm: false,
+      db: false
+    });
   };
 
   nio() {
-    this.setState({ renderedPage: "NIO" });
+    this.setState({
+      renderedPage: "NIO",
+      usb: false,
+      nio: true,
+      svm: false,
+      db: false
+    });
   };
 
   svm() {
-    this.setState({ renderedPage: "Science vs Magic" });
+    this.setState({
+      renderedPage: "Science vs Magic",
+      usb: false,
+      nio: false,
+      svm: true,
+      db: false
+    });
   };
 
   db() {
-    this.setState({ renderedPage: "Database" });
+    this.setState({
+      renderedPage: "Database",
+      usb: false,
+      nio: false,
+      svm: false,
+      db: true
+    });
   };
   
   render() {
@@ -71,40 +99,44 @@ class Earth extends Component {
         <div className="text-center text-light-gray">
           <h5 className="mt-15">
             <Nav className="justify-content-center">
-              <NavItem>
+              <NavItem className="nav-padding">
                 <NavLink
-                  className="text-white"
-                  href="#"
+                  className="main-nav"
+                  activeClassName={this.state.renderedPage === "" || this.state.usb ? "active-nav" : ""}
+                  to="#"
                   onClick={this.usb}
                 >
                   U.S.B.
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+              <NavItem className="nav-padding">
                 <NavLink
-                  className="text-white"
-                  href="#"
+                  className="main-nav"
+                  activeClassName={this.state.nio ? "active-nav" : ""}
+                  to="#"
                   onClick={this.nio}
                 >
                   N.I.O. Suits
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+              <NavItem className="nav-padding">
                 <NavLink
-                  className="text-white"
-                  href="#"
+                  className="main-nav"
+                  activeClassName={this.state.svm ? "active-nav" : ""}
+                  to="#"
                   onClick={this.svm}
                 >
                   Science vs Magic
                 </NavLink>
               </NavItem>
 
-              <NavItem>
+              <NavItem className="nav-padding">
                 <NavLink
-                  className="text-white"
-                  href="#"
+                  className="main-nav"
+                  activeClassName={this.state.db ? "active-nav" : ""}
+                  to="#"
                   onClick={this.db}
                 >
                   DATABASE

@@ -303,30 +303,149 @@ class Earth extends Component {
           {/* Science vs Magic */}
           { this.state.renderedPage === "Science vs Magic" ?
             <div>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
-              <h1>Science vs Magic</h1>
+              <br />
+
+              <hr className="bg-white" />
+              <hr className="bg-white" />
+
+              <br />
+              
+              <span className="text-left">
+                <p className="text-white">
+                  <b>
+                    Everything, when you break it down to it’s smallest bit, is energy.
+                    Science tells us that subatomic electrical arrangements govern the shape
+                    and texture of all things, each pattern having it’s own defined “frequency.”
+                  </b>
+                </p>
+
+                <br />
+
+                <p className="text-white">
+                  <b>
+                    That’s all anything is.
+                    Energy.
+                  </b>
+                </p>
+
+                <br />
+
+                <p>
+                  <i>
+                    This Verse, like all the others, sings it’s own melody. 
+                    Sages have long discovered that, when broken down to the most base
+                    components, everything is made up of the same frequencies arranged
+                    in different patterns.
+                  </i>
+                </p>
+
+                <br />
+
+                <p>
+                  <i>
+                    That’s all anything is.
+                    Music.
+                  </i>
+                </p>
+
+                <br />
+
+                <p className="text-white">
+                  <b>
+                    As hard as it is to believe, the galaxy and everything it developed
+                    out of an expansion of heat and light that bonded to create the perfect
+                    environment for life. Somehow, heat and light created an ongoing
+                    evolutionary process. Heat and light formed a biological connection
+                    between plants and animals. Heat and light gave humanity the intelligence
+                    to appreciate the world around it. It’s a process that difficult to
+                    understand and impossible to replicate, yet here we are trying our best
+                    with this little thing we call “science.”
+                  </b>
+                </p>
+
+                <br />
+
+                <p>
+                  <i>
+                    One must never underestimate the will of the Cosmos.
+                    The ingredients that created everything that is came from an intelligent
+                    light far beyond mortal comprehension. Attempting to fit such omniscient
+                    design into mortal comprehension is a fool’s errand, and so scholars
+                    have learned to never fully submit to the laws of logic.
+                    Much of the known world lies beyond our ability to see, hear, taste,
+                    touch, and smell. We needed a word for the unexplainable ways we
+                    learned to interact with the world around us; we call it “magic.”
+                  </i>
+                </p>
+
+                <br />
+
+                <p className="text-white">
+                  <b>
+                    Through the lens of science we studied the world.
+                    We documented what was and wasn’t possible as we tested the elements.
+                    We discovered how to use electricity to hold information in silicon.
+                    We’ve turned crystals into computers, and inserted computers into biology.
+                    We’ve connected the world through a network of shared information, and
+                    with that information we’ve controlled the world.
+                  </b>
+                </p>
+
+                <br />
+
+                <p>
+                  <i>
+                    A mage manipulates their environment by projecting their will into the
+                    Verse: They alter the vibrations of the world. It starts from within,
+                    gaining control over your own frequencies and energy arrangements.
+                    Usually a focus -such as a crystal in a staff or wand- helps guide the
+                    flow, and the mage creates a brief ripple in the universal law with
+                    their will.
+                  </i>
+                </p>
+
+                <br />
+
+                <p className="text-white">
+                  <b>
+                    The world provided us the tools and insight we needed to discover a
+                    digital existence; now computers are key to our world.
+                  </b>
+                </p>
+
+                <br />
+
+                <p>
+                  <i>
+                    The Verse is a grand mystery that can never fully be solved.
+                    By accepting that energy has always been a conscious thing,
+                    and discovering our connection to it, magic has become key to our world.
+                  </i>
+                </p>
+              </span>
             </div> : null
           }
 
           {/* Database */}
           { this.state.renderedPage === "Database" ?
             <div>
+              <br />
+
+              <hr className="bg-white" />
+              <hr className="bg-white" />
+
+              <br />
+              
               <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
-              <h1>Oh hello, Clarice</h1>
+              <br />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
+              <img src={"../../www/img/Hello-Clarice.jpg"} width="300px" />
             </div> : null            
           }
         </div>

@@ -6,6 +6,7 @@ import {
   NavLink
 } from 'reactstrap';
 import styles from '../../less/Earth.less';
+import { Link } from 'react-scroll';
 
 class Earth extends Component {
   constructor(props) {
@@ -169,7 +170,10 @@ class Earth extends Component {
               <br />
 
               <hr className="bg-white" />
-                Creator - Destroyer - Preserver - Observer
+                <Link to="creator" smooth={true}>Creator</Link> -
+                <Link to="destroyer" smooth={true}> Destroyer</Link> -
+                <Link to="observer" smooth={true}> Observer</Link> -
+                <Link to="preserver" smooth={true}> Preserver</Link>
               <hr className="bg-white" />
 
               <br />
@@ -225,6 +229,7 @@ class Earth extends Component {
                   Its internal CPU scans an agents physical and mental history, discovering
                   their greatest triumphs and failings and customizing to adapt.
                   Agents are then sorted into four categories.
+                  <div id="creator"></div>
                 </p>
               </span>
 
@@ -240,6 +245,7 @@ class Earth extends Component {
                 on the new world as well as creating tools to help Earth citizens adapt to
                 Exodus.
                 <p>Specialist Creator.xo programs include:</p>
+                <div id="destroyer"></div>
               </p>
               <ul className="text-left">
                 <li>Imagination</li>
@@ -254,6 +260,7 @@ class Earth extends Component {
                 Destroyers are in charge of protecting USB colonies and expanding territory
                 as well as eliminating potential threats. 
                 <p>Specialist Destroyer.xo programs include:</p>
+                <div id="observer"></div>
               </p>
               <ul className="text-left">
                 <li>Melee</li>
@@ -269,13 +276,13 @@ class Earth extends Component {
                 create guidlines on culture and living standards for human refugees
                 transfering to Exodus.
                 <p>Specialist Observer.xo programs include:</p>
+                <div id="preserver"></div>
               </p>
               <ul className="text-left">
                 <li>Hound</li>
                 <li>Spy</li>
                 <li>Scribe</li>
               </ul>
-
 
               <p className="text-center text-white"><b>PRESERVER</b></p>
               <p>

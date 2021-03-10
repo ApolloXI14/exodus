@@ -170,10 +170,18 @@ class Earth extends Component {
               <br />
 
               <hr className="bg-white" />
-                <Link to="creator" smooth={true}>Creator</Link> -
-                <Link to="destroyer" smooth={true}> Destroyer</Link> -
-                <Link to="observer" smooth={true}> Observer</Link> -
-                <Link to="preserver" smooth={true}> Preserver</Link>
+                <Link to="creator" smooth={true}>
+                  <span className="scroll-btn">Creator</span>
+                </Link> -
+                <Link to="destroyer" smooth={true}>
+                  <span className="scroll-btn"> Destroyer</span>
+                </Link> -
+                <Link to="observer" smooth={true}>
+                  <span className="scroll-btn"> Observer</span>
+                </Link> -
+                <Link to="preserver" smooth={true}>
+                  <span className="scroll-btn"> Preserver</span>
+                </Link>
               <hr className="bg-white" />
 
               <br />

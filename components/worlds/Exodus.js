@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import {
   Container,
   Nav,
-  NavItem
+  NavItem,
+  Modal,
+  ModalHeader,
+  ModalBody
 } from 'reactstrap';
 import { Link } from 'react-scroll';
 import styles from '../../less/Exodus.less';
@@ -14,11 +17,17 @@ class Exodus extends Component {
     this.map = this.map.bind(this);
     this.races = this.races.bind(this);
     this.magic = this.magic.bind(this);
+    this.toggleShadarrin = this.toggleShadarrin.bind(this);
+    this.toggleBaldeming = this.toggleBaldeming.bind(this);
+    this.toggleJiran = this.toggleJiran.bind(this);
     this.state = {
       renderedPage: "",
       map: false,
       races: false,
-      magic: false
+      magic: false,
+      shadarrinModal: false,
+      baldemingModal: false,
+      jiranModal: false
     };
   };
 
@@ -46,6 +55,24 @@ class Exodus extends Component {
       map: false,
       races: false,
       magic: true
+    });
+  };
+
+  toggleShadarrin() {
+    this.setState({
+      shadarrinModal: !this.state.shadarrinModal
+    });
+  };
+
+  toggleBaldeming() {
+    this.setState({
+      baldemingModal: !this.state.baldemingModal
+    });
+  };
+
+  toggleJiran() {
+    this.setState({
+      jiranModal: !this.state.jiranModal
     });
   };
 
@@ -135,10 +162,127 @@ class Exodus extends Component {
               <img src={"../../www/img/exodus-placeholder.jpg"} width="100%" usemap="#exodus-map" />
 
               <map name="exodus-map">
-                <area shape="rect" coords="500, 10, 1100, 170" href="#" />
-                <area shape="circle" coords="700, 400, 170" href="#" />
-                <area shape="rect" coords="700, 800, 1200, 600" href="#" />
+                <area
+                  shape="rect"
+                  coords="500, 10, 1100, 170"
+                  href="#"
+                  onClick={this.toggleJiran}
+                />
+                <area
+                  shape="circle"
+                  coords="700, 400, 170"
+                  href="#"
+                  onClick={this.toggleShadarrin}
+                />
+                <area
+                  shape="rect"
+                  coords="700, 800, 1200, 600"
+                  href="#"
+                  onClick={this.toggleBaldeming}
+                />
               </map>
+
+              {/* Shadarrin */}
+              <div>
+                <Modal isOpen={this.state.shadarrinModal} toggle={this.toggleShadarrin}>
+                  <ModalHeader toggle={this.toggleShadarrin}>SHADARRIN</ModalHeader>
+                  <ModalBody>
+                    <p>
+                      Dust, smog, and ironworks are the staples of this sand-blasted region.
+                      Shadarrin is an inhospitable land dominated by humankind.
+                      It wasn’t always this way; once long ago Shadarrin was similar to Jiran,
+                      but a mysterious catastrophe left the landscape plagued with unstable radiation.
+                      Animals mutated into aberrents, the weather warped to create unpredictable
+                      chemical storms, and many of the sentient races were forced underground.
+                    </p>
+                    <p>Yet humanity found a way. </p>                  
+                    <p>
+                      Embracing prosthetics, harnessing steam energy, and creating domed
+                      sanctuaries called “Districts” allowed humanity to rule the region.
+                      The districts divide Shadarrin into distinct territories, but those
+                      outside in the wasteland are left to deal with the horrors of the Smog
+                      and all the monstrosities that lurk within. While there is assumed to be
+                      enough room in the safety of the districts, politics, greed, and other
+                      types of corruption keep many from the districts’ protection.
+                      These outsiders -often human but sometimes wildkin, dwarf, gnome, or orc-
+                      live off scavenging and raiding District caravans for survival.
+                    </p>
+                    <p>STYLE & CULTURE</p>
+                    <p>
+                      <span id="baldeming"></span>
+                      Shadarrin clothes are meant to deal with the harshness of desert sands
+                      and unrelenting sun but with a distinctly western aesthetic. Boots are
+                      more popular than shoes or sandals, chaps often cover trousers and the
+                      vests worn over shirts are adorned with all sorts of convenient tools.
+                      With such a heavy steam-based clockwork culture, it isn’t uncommon to see
+                      all sorts of adornments for vision (i.e. goggles or scopes) as well as
+                      clockwork gear-styled prosthetics and accessories.
+                    </p>
+                  </ModalBody>
+                </Modal>
+              </div>
+
+              {/* Baldeming */}
+              <div>
+                <Modal isOpen={this.state.baldemingModal} toggle={this.toggleBaldeming}>
+                  <ModalHeader toggle={this.toggleBaldeming}>BALDEMING</ModalHeader>
+                  <ModalBody>
+                    <p>
+                      The region of Baldeming is characterized by the Mauratnaus Mountain that juts
+                      right up through the middle of the continent. This mountain stands at
+                      approximately 98,000 ft tall and is said to still be growing.
+                      Unlike Shadarrin, humans have never been the dominant species on Baldeming.
+                      The region is home to the “monster” races; various goblinkin, undead, and
+                      gorgon dominate the landscape which forced humans to take refuge on the
+                      mountain (that, for some reason, the monsters refuse to approach).
+                    </p>
+                    <p>
+                      The mountain provided a sanctuary for humans to grow and flourish.
+                      Baldeming is saturated with unusually high amounts of Ether and humans
+                      are the only other race besides elves suited to taking advantage of that.
+                      The surrounding landscape is not at all suistainable for human life,
+                      so it is no surprise that Orcs are the predominant race.
+                      <span id="jiran"></span> Orcish physiology allows for them to endure
+                      more extreme environments and survive off much harsher sustenance.
+                      An orc can eat rocks and gain nutrients and have very little qualms
+                      about eating their own- or anything else nearby when hunger strikes.
+                    </p>
+                  </ModalBody>
+                </Modal>
+              </div>
+
+              {/* Jiran */}
+              <div>
+                <Modal isOpen={this.state.jiranModal} toggle={this.toggleJiran}>
+                  <ModalHeader toggle={this.toggleJiran}>JIRAN</ModalHeader>
+                  <ModalBody>
+                    <p>
+                      Jiran is absolutely dominated by nature, and every single day will remind
+                      you of that fact. The region is a biological paradise: a thriving celebration
+                      of flora and fauna. There are so many animals and plants that grow unique to
+                      Jiran that it often feels like a world of its own. Most Jiranian residents
+                      never leave the region, both because of the difficulty of travel and because
+                      there is always something new to discover even around your own home.
+                      Wildkin undisputedly rule Jiran and view most other races as lesser species.
+                      Because of their strong connection to the primal land, wildkin often view
+                      Humans, Dwarves, and Orcs as their natural enemies – those races are often
+                      the most willing to destroy disproportionate amounts of landscape to create
+                      their cities, tools, and weapons.
+                    </p>
+
+                    <p>
+                      With every type of biome (and some never-before seen) existing in Jiran,
+                      the region is often divided by what creatures can survive in which territories,
+                      and most wildkin clans are either nomadic or do not rely on building structures
+                      to survive. The exception is the massive kingdom ruled by king Jackumi,
+                      covering 1/5th of the land in one massive metropolis.
+                      While Wildkin are the predominant race, they are not the most powerful:
+                      that honor belongs to the various types of Giants that roam the land,
+                      seeking the smaller races for sustenance and servants.
+                    </p>
+                  </ModalBody>
+                </Modal>
+              </div>
             </div> : null
           }
 
@@ -236,7 +380,7 @@ class Exodus extends Component {
 
               <p>
                 <b>RED</b> – Matter: Red mages, also known as Elementalists, are able to
-                manipulate the elemental forces of the world. While at neophytes can usually
+                manipulate the elemental forces of the world. While neophytes can usually
                 only control whatever sources of their elemental focus are nearby, over time
                 Red mages attune their mana to their element and can freely project it.
                 They spend their lives dedicated to the mastery of their chosen element,
@@ -260,12 +404,12 @@ class Exodus extends Component {
 
               <p>
                 <b>BLUE</b> – Law: Blue mages have taken up the task of mastering the rules of
-                time and space that govern the world. They hany different professions:
+                time and space that govern the world. They many different professions:
                 Alchemists, Enchanters, Artificers, Diviners and so much more and as such are
                 considered the more “practical” type of spellcaster.
                 Blue magic is divided into several categories, including Time, Transference,
                 Probability, Vibration, Physics, and Absence(Void).
-                Blue magic is espensive and usually comes with a heavy cost.
+                Blue magic usually comes with a heavy cost.
                 Whereas the elements are always readily available, to bend the laws of the world
                 demands exchange. As a result, blue mages often use orbs or scepters made of
                 crystal and charged with sun or moonlight to offset the costs of their abilities.

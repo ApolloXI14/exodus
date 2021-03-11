@@ -159,6 +159,16 @@ class Exodus extends Component {
           <div>
             <br />
             <hr className="bg-white" />
+
+            <div className="text-center">
+              <Link to="prime" smooth={true}>
+                <span className="scroll-btn">PRIME MAGIC</span>
+              </Link> –
+              <Link to="soul" smooth={true}>
+                <span className="scroll-btn"> SOUL MAGIC</span>
+              </Link>
+            </div>
+
             <hr className="bg-white" />
             <br />
 
@@ -213,6 +223,7 @@ class Exodus extends Component {
                 superconscious way for us to interact with the world; a way to manipulate atoms
                 beyond the limitations of our bodies. On Exodus, Magic is divided into 5 “colors,”
                 but each branch tends to bleed into the others seamlessly.
+                <span id="prime"></span>
                 <p>
                   For example: To summon a fireball (element: Red) involves mental focus
                   (imagination: Yellow) and energy exchange (transference: Blue)
@@ -286,6 +297,7 @@ class Exodus extends Component {
               </p>
 
               <p>
+                <span id="soul"></span>
                 Proficiency in the mental arts is very rare and often takes years of study even
                 to begin. Of all spellcasters, these are by far the rarest. There is a legend that
                 the original civilizations to pioneer enhanced mental capacity lived a purely
@@ -306,6 +318,91 @@ class Exodus extends Component {
                 Our souls are beacons to other disembodied spirits.
               </p>
 
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+
+              
+
+
+
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
+              <p>
+                Demons, angels, and all the other formless things desperate to affect the
+                physical world whisper thoughts into our subconscious in hope of influencing us.
+                Our karma is power, and the higher or lower it is the more “miracles” or “curses”
+                can be enacted. Our “prayers” lend our energy to the spirits, good or bad, drawn
+                to us and allow them to affect changes on the world. Spirit magic in and of itself
+                is neither good nor evil, depending entirely on the inner compass of the person
+                performing it. Spiritualists use their mana to give phyical bodies to the spirits
+                that follow them, effectively “summoning” them into the living realm.
+              </p>
               <p>
                 Demons, angels, and all the other formless things desperate to affect the
                 physical world whisper thoughts into our subconscious in hope of influencing us.

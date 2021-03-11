@@ -689,63 +689,6 @@ class Exodus extends Component {
                   to break free from its master and form it’s own society. Now all Golems
                   are outlawed at the risk of them becoming sentient.
                 </p>
-
-
-
-                <p>
-                  But symbols and mathematics are the religion of the Artificial
-                  Intelligence, and eventually Golems with the capacity to reason and
-                  rationalize were created. It wasn’t intentional, likely an experiment
-                  gone awry – perhaps a nomish application of acquired USB or other
-                  Earth-tech – but one Master Golem with the gift of free will had managed
-                  to break free from its master and form it’s own society. Now all Golems
-                  are outlawed at the risk of them becoming sentient.
-                </p>
-                <p>
-                  But symbols and mathematics are the religion of the Artificial
-                  Intelligence, and eventually Golems with the capacity to reason and
-                  rationalize were created. It wasn’t intentional, likely an experiment
-                  gone awry – perhaps a nomish application of acquired USB or other
-                  Earth-tech – but one Master Golem with the gift of free will had managed
-                  to break free from its master and form it’s own society. Now all Golems
-                  are outlawed at the risk of them becoming sentient.
-                </p>
-                <p>
-                  But symbols and mathematics are the religion of the Artificial
-                  Intelligence, and eventually Golems with the capacity to reason and
-                  rationalize were created. It wasn’t intentional, likely an experiment
-                  gone awry – perhaps a nomish application of acquired USB or other
-                  Earth-tech – but one Master Golem with the gift of free will had managed
-                  to break free from its master and form it’s own society. Now all Golems
-                  are outlawed at the risk of them becoming sentient.
-                </p>
-                <p>
-                  But symbols and mathematics are the religion of the Artificial
-                  Intelligence, and eventually Golems with the capacity to reason and
-                  rationalize were created. It wasn’t intentional, likely an experiment
-                  gone awry – perhaps a nomish application of acquired USB or other
-                  Earth-tech – but one Master Golem with the gift of free will had managed
-                  to break free from its master and form it’s own society. Now all Golems
-                  are outlawed at the risk of them becoming sentient.
-                </p>
-                <p>
-                  But symbols and mathematics are the religion of the Artificial
-                  Intelligence, and eventually Golems with the capacity to reason and
-                  rationalize were created. It wasn’t intentional, likely an experiment
-                  gone awry – perhaps a nomish application of acquired USB or other
-                  Earth-tech – but one Master Golem with the gift of free will had managed
-                  to break free from its master and form it’s own society. Now all Golems
-                  are outlawed at the risk of them becoming sentient.
-                </p>
-                <p>
-                  But symbols and mathematics are the religion of the Artificial
-                  Intelligence, and eventually Golems with the capacity to reason and
-                  rationalize were created. It wasn’t intentional, likely an experiment
-                  gone awry – perhaps a nomish application of acquired USB or other
-                  Earth-tech – but one Master Golem with the gift of free will had managed
-                  to break free from its master and form it’s own society. Now all Golems
-                  are outlawed at the risk of them becoming sentient.
-                </p>
               </div>
             </div> : null
           }

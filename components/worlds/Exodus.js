@@ -59,19 +59,22 @@ class Exodus extends Component {
     });
   };
 
-  toggleShadarrin() {
+  toggleShadarrin(e) {
+    e.preventDefault();
     this.setState({
       shadarrinModal: !this.state.shadarrinModal
     });
   };
 
-  toggleBaldeming() {
+  toggleBaldeming(e) {
+    e.preventDefault();
     this.setState({
       baldemingModal: !this.state.baldemingModal
     });
   };
 
-  toggleJiran() {
+  toggleJiran(e) {
+    e.preventDefault();
     this.setState({
       jiranModal: !this.state.jiranModal
     });

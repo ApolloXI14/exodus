@@ -185,8 +185,13 @@ class Exodus extends Component {
               {/* Shadarrin */}
               <div>
                 <Modal isOpen={this.state.shadarrinModal} toggle={this.toggleShadarrin}>
-                  <ModalHeader toggle={this.toggleShadarrin}>SHADARRIN</ModalHeader>
-                  <ModalBody>
+                  {/* <ModalHeader toggle={this.toggleShadarrin} className="modal-heading" close={" "}>SHADARRIN</ModalHeader> */}
+                  <ModalBody style={{
+                    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/shadarrin-placeholder.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}>
+                    <h1 className="text-center shadarrin-modal-heading">SHADARRIN</h1>
                     <p>
                       Dust, smog, and ironworks are the staples of this sand-blasted region.
                       Shadarrin is an inhospitable land dominated by humankind.
@@ -207,7 +212,7 @@ class Exodus extends Component {
                       These outsiders -often human but sometimes wildkin, dwarf, gnome, or orc-
                       live off scavenging and raiding District caravans for survival.
                     </p>
-                    <p>STYLE & CULTURE</p>
+                    {/* <p>STYLE & CULTURE</p> */}
                     <p>
                       <span id="baldeming"></span>
                       Shadarrin clothes are meant to deal with the harshness of desert sands
@@ -225,8 +230,13 @@ class Exodus extends Component {
               {/* Baldeming */}
               <div>
                 <Modal isOpen={this.state.baldemingModal} toggle={this.toggleBaldeming}>
-                  <ModalHeader toggle={this.toggleBaldeming}>BALDEMING</ModalHeader>
-                  <ModalBody>
+                  {/* <ModalHeader toggle={this.toggleBaldeming} className="modal-heading" close={" "}>BALDEMING</ModalHeader> */}
+                  <ModalBody style={{
+                    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/baldeming-placeholder.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}>
+                    <h1 className="text-center baldeming-modal-heading">BALDEMING</h1>
                     <p>
                       The region of Baldeming is characterized by the Mauratnaus Mountain that juts
                       right up through the middle of the continent. This mountain stands at
@@ -254,8 +264,13 @@ class Exodus extends Component {
               {/* Jiran */}
               <div>
                 <Modal isOpen={this.state.jiranModal} toggle={this.toggleJiran}>
-                  <ModalHeader toggle={this.toggleJiran}>JIRAN</ModalHeader>
-                  <ModalBody>
+                  {/* <ModalHeader toggle={this.toggleJiran} className="modal-heading" close={" "}>JIRAN</ModalHeader> */}
+                  <ModalBody className="modal-body" style={{
+                    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/jiran-placeholder.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }}>
+                    <h1 className="text-center jiran-modal-heading">JIRAN</h1>
                     <p>
                       Jiran is absolutely dominated by nature, and every single day will remind
                       you of that fact. The region is a biological paradise: a thriving celebration

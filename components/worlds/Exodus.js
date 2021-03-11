@@ -381,27 +381,30 @@ class Exodus extends Component {
                   <span className="scroll-btn"> SCIONS</span>
                 </Link> –
                 <Link to="golem" smooth={true}>
-                  <span className="scroll-btn"> GOLEM</span>
+                  <span className="scroll-btn"> GOLEMS</span>
                 </Link>
 
-                <p className="text-white mt-3"><b>BLIGHTED</b></p>
+                <p className="text-white mt-3"><span id="human"></span><b>BLIGHTED</b></p>
                 <Link to="werebeasts" smooth={true}>
                   <span className="scroll-btn">WEREBEASTS</span>
+                  {/* <span id="werebeasts"></span> */}
                 </Link> –
                 <Link to="akkad'ai" smooth={true}>
                   <span className="scroll-btn"> AKKAD’AI</span>
+                  {/* <span id="akkad'ai"></span> */}
                 </Link> –
                 <Link to="netra-zazanta" smooth={true}>
                   <span className="scroll-btn"> NETRA-ZAZANTA</span>
+                  {/* <span id="netra-zazanta"></span> */}
                 </Link> –
                 <Link to="the-fell" smooth={true}>
                   <span className="scroll-btn"> THE FELL</span>
+                  {/* <span id="the-fell"></span> */}
                 </Link>
               </div>
 
               <hr className="bg-white" />
 
-              {/* Human */}
               <p className="text-center"><b>HUMAN</b></p>
               <div className="text-left">
                 <p>
@@ -414,6 +417,7 @@ class Exodus extends Component {
                   Adaptable, but not the best constitution.
                 </p>
                 <p>
+                  <span id="wildkin"></span>
                   Humans are also beautiful, and such beauty is coveted. Orcs and giantkin love to
                   collect human eyes and faces for display. Nearly all humans place a value on art
                   and symbolism, and as a group their organizations often obsess over fine details.
@@ -425,7 +429,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Wildkin */}
               <p className="text-center"><b>WILDKIN</b></p>
               <div>
                 <img src={"../../www/img/wildkin.png"} width="200px" className="mb-4 race-image" />
@@ -441,6 +444,7 @@ class Exodus extends Component {
                   movements.
                 </p>
                 <p>
+                  <span id="kogg"></span>
                   Wildkin exist all across the world, but their homeland is Jiran. In other
                   regions, Wildkin have adapted to their surrounding cultures. Wildkin have a
                   natural dislike of humans, dwarves, and giants as those races tend to have
@@ -453,7 +457,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Kogg */}
               <p className="text-center"><b>KOGG</b></p>
               <div>
                 <p>
@@ -463,7 +466,7 @@ class Exodus extends Component {
                   culture has remained largely unchanged for thousands of years. Kogg are a
                   subterranean species with bodies nearly as tough as the stone they mine.
                   Their creations are by and far the most reliable, durable, and efficient
-                  inventions on the planet, rivaled only by the Giants.
+                  inventions on the planet, rivaled only by the Giants.<span id="urul"></span>
                 </p>
                 <p>
                   Kogg don’t normally have need or reason to interact with most of the other races
@@ -476,7 +479,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Urul */}
               <p className="text-center"><b>URUL</b></p>
               <div>
                 <p>
@@ -494,7 +496,7 @@ class Exodus extends Component {
                   Everything about Urul seems adapted to fighting and consuming, and when pushed
                   to the brink of death an Urul will enter a bloodlusted state: their bodies swell,
                   their skin turns red, and they feel no pain. In this berserker state, the urul’s
-                  strength is multiplied and they will fight tirelessly until their rage ends…
+                  strength is multiplied and they will fight tirelessly until their rage ends…<span id="amiran"></span>
                   and they die. Most humans, kogg, and many other races consider Urul to be one
                   of the “monster” species; an unnatural creature that throws off the balance of
                   nature and exists only for destruction, but 1 out of every 1000 Urul are born
@@ -504,7 +506,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Amiran */}
               <p className="text-center"><b>AMIRAN</b></p>
               <div>
                 <p>
@@ -520,7 +521,7 @@ class Exodus extends Component {
                   live the first 300 years of their life growing rapidly. After reaching around
                   9 feet, they can only temporarily grow to giant proportions for limited periods
                   of time. Once they reach maturity, they burrow deep into their environment to
-                  fall into a deep sleep. After another century, they emerge as towering adults,
+                  fall into a deep sleep. After another century, they emerge as towering adults,<span id="nom"></span>
                   known as “Ascended Giants.” These Amiran no longer have normal flesh as their
                   bodies have merged with their ecosystem. Water giants have waterfalls and rocks
                   cascading across their bodies, desert giants are made of sand and stone, swamp
@@ -531,7 +532,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Nom */}
               <p className="text-center"><b>NOM</b></p>
               <div>
                 <p>
@@ -547,7 +547,7 @@ class Exodus extends Component {
                   his bodyguard, and his travel vehicle.
                 </p>
                 <p>
-                  Nom don’t like people. In fact, most Nom don’t even like other Nom.
+                  Nom don’t like people. In fact, most Nom don’t even like other Nom.<span id="liv'ri-olu"></span>
                   Despite that their society thrives on trade and communication, Nom are
                   notoriously arrogant. They are impatient with the slower races, judge
                   the dirty races, and cannot stand the arrogant prattling of each other.
@@ -559,7 +559,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Liv'ri / Olu */}
               <p className="text-center"><b>LIV’RI / OLU</b></p>
               <div>
                 <img src={"../../www/img/livri-olu.png"} width="200px" className="mb-4 race-image" />
@@ -576,7 +575,7 @@ class Exodus extends Component {
                   Olu are born from the fungal kingdom, and usually live underground.
                   (Some have aboveground mushroom villages) because of their naturally
                   symbiotic nature and deadly spores they tend to be hated by the other
-                  races.
+                  races.<span id="d'jinn"></span>
                 </p>
                 <p>
                   Liv’ri and Olu can naturally command plant and fungal-life respectively.
@@ -589,27 +588,26 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Djinn */}
-              <p className="text-center"><b>DJINN</b></p>
+              <p className="text-center"><b>D’JINN</b></p>
               <div>
                 <p>
                   Long ago before intelligence races had learned to weave magic into spells,
                   they wished upon the stars. Sometimes, those wishes would be granted,
                   so they wished some more. They didn’t realize that there was a cost,
                   that looking at the same star and wishing upon it forged a pact with
-                  creatures living in the cosmos. The Djinn fed on the energy of the wishes,
+                  creatures living in the cosmos. The D’Jinn fed on the energy of the wishes,
                   or rather, the energy they took from their hosts.
                 </p>
                 <p>
-                  With so many millions of wishes to grant, the Djinn ate well and lived
+                  With so many millions of wishes to grant, the D’Jinn ate well and lived
                   peacefully.. But over time as the races evolved and discovered how to
-                  manipulate ether, the Djinn found themselves with less and less wishes to
+                  manipulate ether, the D’Jinn found themselves with less and less wishes to
                   grant.
                 </p>
-                <p>
-                  As always when precious resources are on the decline, the Djinn began
+                <p><span id="fae"></span>
+                  As always when precious resources are on the decline, the D’Jinn began
                   to war amongst themsleves. The most clever among them decided a different
-                  approach and went down to the world -something most D’jinn would consider
+                  approach and went down to the world -something most D’Jinn would consider
                   impossible since they do not have flesh bodies and would quickly
                   destabilize- to inhabit valuable objects and prey on whoever is
                   fortunate(and unfortunate) enough to find them.
@@ -618,7 +616,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Fae */}
               <p className="text-center"><b>FAE</b></p>
               <div>
                 <p>
@@ -633,7 +630,7 @@ class Exodus extends Component {
                 <p>
                   … But what if one is separated?
                 </p>
-                <p>
+                <p><span id="scions"></span>
                   A Fae separated too long from its cluster will perish, along with
                   whatever knowledge and information it had gained inbetween the times
                   it had remerged. The Fae actually prefer to exist as a swarm, able to
@@ -645,7 +642,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Elemental x Scions */}
               <p className="text-center"><b>ELEMENTAL x SCIONS</b></p>
               <div>
                 <p>
@@ -663,7 +659,7 @@ class Exodus extends Component {
                   the first precursors for intelligent Elementals: starting with teaching
                   the other Elementals the deeper concepts of “language.” Eventually,
                   Elementals would begin to seek out flesh-hosts to imbue their powers in
-                  so that their resulting offspring would receive the elemental power and
+                  so that their resulting offspring would receive the elemental power and<span id="golem"></span>
                   knowledge. These elemental “scions” look consistent and unique, showing
                   only traces of whatever lineage they were born from. They have hair made
                   of their respective element, and glowing lines of energy running where
@@ -674,7 +670,6 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              {/* Golems */}
               <p className="text-center"><b>GOLEMS</b></p>
               <div>
                 <p>
@@ -684,6 +679,63 @@ class Exodus extends Component {
                   sigil-based magic and make magical “programs” with consistently
                   predictable results. This also allowed for their construction of
                   Golems controlled by their Magnecube gauntlets.
+                </p>
+                <p>
+                  But symbols and mathematics are the religion of the Artificial
+                  Intelligence, and eventually Golems with the capacity to reason and
+                  rationalize were created. It wasn’t intentional, likely an experiment
+                  gone awry – perhaps a nomish application of acquired USB or other
+                  Earth-tech – but one Master Golem with the gift of free will had managed
+                  to break free from its master and form it’s own society. Now all Golems
+                  are outlawed at the risk of them becoming sentient.
+                </p>
+
+
+
+                <p>
+                  But symbols and mathematics are the religion of the Artificial
+                  Intelligence, and eventually Golems with the capacity to reason and
+                  rationalize were created. It wasn’t intentional, likely an experiment
+                  gone awry – perhaps a nomish application of acquired USB or other
+                  Earth-tech – but one Master Golem with the gift of free will had managed
+                  to break free from its master and form it’s own society. Now all Golems
+                  are outlawed at the risk of them becoming sentient.
+                </p>
+                <p>
+                  But symbols and mathematics are the religion of the Artificial
+                  Intelligence, and eventually Golems with the capacity to reason and
+                  rationalize were created. It wasn’t intentional, likely an experiment
+                  gone awry – perhaps a nomish application of acquired USB or other
+                  Earth-tech – but one Master Golem with the gift of free will had managed
+                  to break free from its master and form it’s own society. Now all Golems
+                  are outlawed at the risk of them becoming sentient.
+                </p>
+                <p>
+                  But symbols and mathematics are the religion of the Artificial
+                  Intelligence, and eventually Golems with the capacity to reason and
+                  rationalize were created. It wasn’t intentional, likely an experiment
+                  gone awry – perhaps a nomish application of acquired USB or other
+                  Earth-tech – but one Master Golem with the gift of free will had managed
+                  to break free from its master and form it’s own society. Now all Golems
+                  are outlawed at the risk of them becoming sentient.
+                </p>
+                <p>
+                  But symbols and mathematics are the religion of the Artificial
+                  Intelligence, and eventually Golems with the capacity to reason and
+                  rationalize were created. It wasn’t intentional, likely an experiment
+                  gone awry – perhaps a nomish application of acquired USB or other
+                  Earth-tech – but one Master Golem with the gift of free will had managed
+                  to break free from its master and form it’s own society. Now all Golems
+                  are outlawed at the risk of them becoming sentient.
+                </p>
+                <p>
+                  But symbols and mathematics are the religion of the Artificial
+                  Intelligence, and eventually Golems with the capacity to reason and
+                  rationalize were created. It wasn’t intentional, likely an experiment
+                  gone awry – perhaps a nomish application of acquired USB or other
+                  Earth-tech – but one Master Golem with the gift of free will had managed
+                  to break free from its master and form it’s own society. Now all Golems
+                  are outlawed at the risk of them becoming sentient.
                 </p>
                 <p>
                   But symbols and mathematics are the religion of the Artificial

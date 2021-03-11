@@ -162,7 +162,7 @@ class Exodus extends Component {
 
               <img src={"../../www/img/exodus-placeholder.jpg"} width="100%" usemap="#exodus-map" />
 
-              <div className="my-4">
+              <div className="my-4 region-buttons">
                 <Button block color="info" onClick={this.toggleJiran}>JIRAN</Button>
                 <Button block color="info" onClick={this.toggleShadarrin}>SHADARRIN</Button>
                 <Button block color="info" onClick={this.toggleBaldeming}>BALDEMING</Button>
@@ -199,6 +199,7 @@ class Exodus extends Component {
                     backgroundSize: "cover"
                   }}>
                     <h1 className="text-center shadarrin-modal-heading">SHADARRIN</h1>
+                    <br/>
                     <p>
                       Dust, smog, and ironworks are the staples of this sand-blasted region.
                       Shadarrin is an inhospitable land dominated by humankind.
@@ -244,6 +245,7 @@ class Exodus extends Component {
                     backgroundSize: "cover"
                   }}>
                     <h1 className="text-center baldeming-modal-heading">BALDEMING</h1>
+                    <br/>
                     <p>
                       The region of Baldeming is characterized by the Mauratnaus Mountain that juts
                       right up through the middle of the continent. This mountain stands at
@@ -278,6 +280,7 @@ class Exodus extends Component {
                     backgroundSize: "cover"
                   }}>
                     <h1 className="text-center jiran-modal-heading">JIRAN</h1>
+                    <br/>
                     <p>
                       Jiran is absolutely dominated by nature, and every single day will remind
                       you of that fact. The region is a biological paradise: a thriving celebration

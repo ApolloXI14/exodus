@@ -5,7 +5,8 @@ import {
   NavItem,
   Modal,
   ModalHeader,
-  ModalBody
+  ModalBody,
+  Button
 } from 'reactstrap';
 import { Link } from 'react-scroll';
 import styles from '../../less/Exodus.less';
@@ -161,6 +162,12 @@ class Exodus extends Component {
 
               <img src={"../../www/img/exodus-placeholder.jpg"} width="100%" usemap="#exodus-map" />
 
+              <div className="my-4">
+                <Button block color="info" onClick={this.toggleJiran}>JIRAN</Button>
+                <Button block color="info" onClick={this.toggleShadarrin}>SHADARRIN</Button>
+                <Button block color="info" onClick={this.toggleBaldeming}>BALDEMING</Button>
+              </div>
+
               <map name="exodus-map">
                 <area
                   shape="rect"
@@ -185,7 +192,7 @@ class Exodus extends Component {
               {/* Shadarrin */}
               <div>
                 <Modal isOpen={this.state.shadarrinModal} toggle={this.toggleShadarrin}>
-                  {/* <ModalHeader toggle={this.toggleShadarrin} className="modal-heading" close={" "}>SHADARRIN</ModalHeader> */}
+                  <ModalHeader toggle={this.toggleShadarrin} className="mx-auto close-modal"></ModalHeader>
                   <ModalBody style={{
                     backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/shadarrin-placeholder.png')",
                     backgroundRepeat: "no-repeat",
@@ -230,7 +237,7 @@ class Exodus extends Component {
               {/* Baldeming */}
               <div>
                 <Modal isOpen={this.state.baldemingModal} toggle={this.toggleBaldeming}>
-                  {/* <ModalHeader toggle={this.toggleBaldeming} className="modal-heading" close={" "}>BALDEMING</ModalHeader> */}
+                  <ModalHeader toggle={this.toggleBaldeming} className="mx-auto close-modal"></ModalHeader>
                   <ModalBody style={{
                     backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/baldeming-placeholder.png')",
                     backgroundRepeat: "no-repeat",
@@ -264,7 +271,7 @@ class Exodus extends Component {
               {/* Jiran */}
               <div>
                 <Modal isOpen={this.state.jiranModal} toggle={this.toggleJiran}>
-                  {/* <ModalHeader toggle={this.toggleJiran} className="modal-heading" close={" "}>JIRAN</ModalHeader> */}
+                  <ModalHeader toggle={this.toggleJiran} className="mx-auto close-modal"></ModalHeader>
                   <ModalBody className="modal-body" style={{
                     backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/jiran-placeholder.png')",
                     backgroundRepeat: "no-repeat",

@@ -431,7 +431,9 @@ class Exodus extends Component {
 
               <p className="text-center"><b>WILDKIN</b></p>
               <div>
-                <img src={"../../www/img/wildkin.png"} width="200px" className="mb-4 race-image" />
+                <a href="#">
+                  <img src={"../../www/img/wildkin.png"} width="200px" className="mb-4 race-image" />
+                </a>
                 <p>
                   Known as “beasts wearing the form of men,” Wildkin resemble human-animal hybrids
                   capable of shapeshifting between forms. In their natural state, a Wildkin
@@ -561,7 +563,9 @@ class Exodus extends Component {
 
               <p className="text-center"><b>LIV’RI / OLU</b></p>
               <div>
-                <img src={"../../www/img/livri-olu.png"} width="200px" className="mb-4 race-image" />
+                <a href="#">
+                  <img src={"../../www/img/livri-olu.png"} width="200px" className="mb-4 race-image" />
+                </a>
                 <p>
                   The Liv’ri are the sentinels of all flora. They are humanoid but they
                   grow plantlife where humans would grow hair. Their weapons and clothing

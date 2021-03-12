@@ -455,9 +455,12 @@ class Exodus extends Component {
 
               <p className="text-center"><b>WILDKIN</b></p>
               <div>
-                <a href="#" onClick={this.toggleWildkin}>
-                  <img src={"../../www/img/wildkin.png"} width="200px" className="mb-4 race-image" />
-                </a>
+                <img
+                  src={"../../www/img/wildkin.png"}
+                  width="200px"
+                  className="mb-4 race-image"
+                  onClick={this.toggleWildkin}
+                />
 
                 <div>
                   <Modal isOpen={this.state.wildkinModal} toggle={this.toggleWildkin}>
@@ -779,9 +782,12 @@ class Exodus extends Component {
 
               <p className="text-center"><b>LIV’RI / OLU</b></p>
               <div>
-                <a href="#" onClick={this.toggleLivriOlu}>
-                  <img src={"../../www/img/livri-olu.png"} width="200px" className="mb-4 race-image" />
-                </a>
+                <img
+                  src={"../../www/img/livri-olu.png"}
+                  width="200px"
+                  className="mb-4 race-image"
+                  onClick={this.toggleLivriOlu}
+                />
                 <p>
                   The Liv’ri are the sentinels of all flora. They are humanoid but they
                   grow plantlife where humans would grow hair. Their weapons and clothing

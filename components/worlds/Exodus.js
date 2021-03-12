@@ -426,7 +426,7 @@ class Exodus extends Component {
 
               <hr className="bg-white" />
 
-              <p className="text-center"><b>HUMAN</b></p>
+              <p className="text-center"><b>HUMAN</b></p> 
               <div className="text-left">
                 <p>
                   Humans are one of the few blooded races that are capable of manipulating
@@ -448,6 +448,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>WILDKIN</b></p>
@@ -655,6 +658,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>KOGG</b></p>
@@ -677,6 +683,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>URUL</b></p>
@@ -704,6 +713,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>AMIRAN</b></p>
@@ -730,6 +742,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>NOM</b></p>
@@ -757,6 +772,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>LIV’RI / OLU</b></p>
@@ -955,6 +973,9 @@ class Exodus extends Component {
                 </Modal>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>D’JINN</b></p>
@@ -983,6 +1004,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>FAE</b></p>
@@ -1009,6 +1033,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>ELEMENTAL x SCIONS</b></p>
@@ -1037,6 +1064,9 @@ class Exodus extends Component {
                 </p>
               </div>
 
+              <div className="scroll-to-top">
+                <a href="#">Back to top</a>
+              </div>
               <hr className="bg-white" />
 
               <p className="text-center"><b>GOLEMS</b></p>
@@ -1058,6 +1088,10 @@ class Exodus extends Component {
                   to break free from its master and form it’s own society. Now all Golems
                   are outlawed at the risk of them becoming sentient.
                 </p>
+              </div>
+
+              <div style={{textAlign:"center"}}>
+                <a href="#">Back to top</a>
               </div>
             </div> : null
           }
@@ -1237,6 +1271,14 @@ class Exodus extends Component {
                 that follow them, effectively “summoning” them into the living realm.
               </p>
             </div>
+
+            <div style={{textAlign:"center"}}>
+              <a href="#">Back to top</a>
+            </div>
+
+            {/* <Link to="top" smooth={true}>
+              <span className="scroll-to-top">Back to top</span>
+            </Link> */}
           </div> : null
           }
         </div>

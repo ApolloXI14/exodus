@@ -337,6 +337,10 @@ class Earth extends Component {
                 <li>Fortifications</li>
                 <li>Stasis</li>
               </ul>
+
+              <div style={{textAlign:"center"}}>
+                <a href="#">Back to top</a>
+              </div>
             </div> : null
           }
 
@@ -463,6 +467,10 @@ class Earth extends Component {
                   </i>
                 </p>
               </span>
+
+              <div style={{textAlign:"center"}}>
+                <a href="#">Back to top</a>
+              </div>
             </div> : null
           }
 

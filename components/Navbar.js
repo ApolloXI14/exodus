@@ -36,7 +36,7 @@ class NavigationBar extends Component {
   render() {
     const url = window.location.pathname;
     return (
-      <Navbar dark expand="md" className="bg-black" sticky="top">
+      <Navbar dark expand="md" className={ url === "/world" ? "bg-black nav-responsive" : "bg-black"} sticky="top">
         <NavbarBrand href="/">
           <img src="www/img/EXODUS_LOGO01-e1590806106934.png" alt="Exodus Nav Logo" />
         </NavbarBrand>

@@ -4,7 +4,7 @@ import styles from '../less/World.less';
 class World extends Component {
   render() {
     return (
-      <div className="world-container container world-container-responsive">
+      <div className="world-container container">
 
         <div className="top-image-container">
           <a href='/earth'>

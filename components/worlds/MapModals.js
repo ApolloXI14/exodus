@@ -4,6 +4,7 @@ import {
   ModalHeader,
   ModalBody
 } from 'reactstrap';
+import styles from '../../less/Exodus.less';
 
 export const ShadarrinModal = props => {
   const { isOpen, toggle } = props;
@@ -11,7 +12,7 @@ export const ShadarrinModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody style={{
+        <ModalBody className="modal-body" style={{
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/shadarrin-placeholder.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover"
@@ -62,7 +63,7 @@ export const BaldemingModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody style={{
+        <ModalBody className="modal-body" style={{
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/baldeming-placeholder.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover"

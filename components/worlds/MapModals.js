@@ -1,93 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-  Container,
-  Nav,
-  NavItem,
-  NavLink
+  Modal,
+  ModalHeader,
+  ModalBody
 } from 'reactstrap';
-import { Link } from 'react-scroll';
-import styles from '../../less/Exodus.less';
 
-class Exodus extends Component {
-  render() {
-    return (
-      <Container
-        fluid
-        className="pt-3 p-5"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../www/img/background/Exodus-world-concept.jpg')",
+export const ShadarrinModal = props => {
+  const { isOpen, toggle } = props;
+  return (
+    <div>
+      <Modal isOpen={isOpen} toggle={toggle}>
+        <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
+        <ModalBody style={{
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/shadarrin-placeholder.png')",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed"
-        }}
-      >
-        <h1 className="text-white">THE WORLD OF EXODUS</h1>
-
-        <br />
-
-        <div className="text-light-gray">
-          <h5 className="mt-15">
-            <Nav className="justify-content-center">
-              <NavItem>
-                <NavLink disabled href="#">Races</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink disabled href="#">Organizations</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink disabled href="#">History</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink disabled href="#">Magic</NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink disabled href="#">Creatures</NavLink>
-              </NavItem>
-            </Nav>
-          </h5>
-
-          <br />
-
-          {/* Convert to Navlinks later (scroll-links) */}
-          <h5 className="text-center">
-            <Link to="shadarrin" smooth={true}>
-              <span className="scroll-btn">SHADARRIN</span>
-            </Link> –
-            <Link to="baldeming" smooth={true}>
-              <span className="scroll-btn"> BALDEMING</span>
-            </Link> –
-            <Link to="jiran" smooth={true}>
-              <span className="scroll-btn"> JIRAN</span>
-            </Link>
-          </h5>
-
-          <br />
-
-          <p>
-            The world of Exodus is much larger than Earth,
-            and with so many different sentient races (some much more ancient than others)
-            it isn’t uncommon for some parts of the world to seem from an entirely
-            different time period than others. The charted parts of Exodus are divided
-            into three regions; Shadarrin, Jiran, and Baldeming. Each of these continental
-            masses have extremely unique cultures and technology
-          </p>
-
-          <div id="shadarrin"></div>
-
+          backgroundSize: "cover"
+        }}>
           <br />
           <hr className="bg-white" />
+          <h1 className="text-center">SHADARRIN</h1>
           <hr className="bg-white" />
           <br />
-          
-          <h5 className="text-center">SHADARRIN</h5>
-
-          <br />
-
           <p>
             Dust, smog, and ironworks are the staples of this sand-blasted region.
             Shadarrin is an inhospitable land dominated by humankind.
@@ -96,9 +29,7 @@ class Exodus extends Component {
             Animals mutated into aberrents, the weather warped to create unpredictable
             chemical storms, and many of the sentient races were forced underground.
           </p>
-
-          <p>Yet humanity found a way. </p>
-          
+          <p>Yet humanity found a way. </p>                  
           <p>
             Embracing prosthetics, harnessing steam energy, and creating domed
             sanctuaries called “Districts” allowed humanity to rule the region.
@@ -110,11 +41,7 @@ class Exodus extends Component {
             These outsiders -often human but sometimes wildkin, dwarf, gnome, or orc-
             live off scavenging and raiding District caravans for survival.
           </p>
-
-          <p>STYLE & CULTURE</p>
-
           <p>
-            <span id="baldeming"></span>
             Shadarrin clothes are meant to deal with the harshness of desert sands
             and unrelenting sun but with a distinctly western aesthetic. Boots are
             more popular than shoes or sandals, chaps often cover trousers and the
@@ -123,13 +50,28 @@ class Exodus extends Component {
             all sorts of adornments for vision (i.e. goggles or scopes) as well as
             clockwork gear-styled prosthetics and accessories.
           </p>
+        </ModalBody>
+      </Modal>
+    </div>
+  );
+};
 
-          <hr className="bg-white" />
-
-          <h5 className="text-center">BALDEMING</h5>
-
+export const BaldemingModal = props => {
+  const { isOpen, toggle } = props;
+  return (
+    <div>
+      <Modal isOpen={isOpen} toggle={toggle}>
+        <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
+        <ModalBody style={{
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/baldeming-placeholder.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }}>
           <br />
-
+          <hr className="bg-white" />
+          <h1 className="text-center">BALDEMING</h1>
+          <hr className="bg-white" />
+          <br />
           <p>
             The region of Baldeming is characterized by the Mauratnaus Mountain that juts
             right up through the middle of the continent. This mountain stands at
@@ -139,7 +81,6 @@ class Exodus extends Component {
             gorgon dominate the landscape which forced humans to take refuge on the
             mountain (that, for some reason, the monsters refuse to approach).
           </p>
-
           <p>
             The mountain provided a sanctuary for humans to grow and flourish.
             Baldeming is saturated with unusually high amounts of Ether and humans
@@ -151,13 +92,28 @@ class Exodus extends Component {
             An orc can eat rocks and gain nutrients and have very little qualms
             about eating their own- or anything else nearby when hunger strikes.
           </p>
+        </ModalBody>
+      </Modal>
+    </div>
+  );
+};
 
-          <hr className="bg-white" />
-          
-          <h5 className="text-center">JIRAN</h5>
-
+export const JiranModal = props => {
+  const { isOpen, toggle } = props;
+  return (
+    <div>
+      <Modal isOpen={isOpen} toggle={toggle}>
+        <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
+        <ModalBody className="modal-body" style={{
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/jiran-placeholder.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }}>
           <br />
-
+          <hr className="bg-white" />
+          <h1 className="text-center">JIRAN</h1>
+          <hr className="bg-white" />
+          <br />
           <p>
             Jiran is absolutely dominated by nature, and every single day will remind
             you of that fact. The region is a biological paradise: a thriving celebration
@@ -182,10 +138,8 @@ class Exodus extends Component {
             that honor belongs to the various types of Giants that roam the land,
             seeking the smaller races for sustenance and servants.
           </p>
-        </div>
-      </Container>
-    );
-  };
+        </ModalBody>
+      </Modal>
+    </div>
+  );
 };
-
-export default Exodus;

@@ -14,22 +14,14 @@ class NavigationBar extends Component {
   constructor(props) {
     super(props);
     this.toggleNav = this.toggleNav.bind(this);
-    this.toggleDropdown = this.toggleDropdown.bind(this);
     this.state = {
-      navOpen: false,
-      dropDownOpen: false
+      navOpen: false
     }
   };
 
   toggleNav() {
     this.setState({
       navOpen: !this.state.navOpen
-    });
-  };
-
-  toggleDropdown() {
-    this.setState({
-      dropDownOpen: !this.state.dropDownOpen
     });
   };
 

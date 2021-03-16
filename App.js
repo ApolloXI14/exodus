@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import PhotoNavbar from './components/PhotoNavbar';
 import NavigationBar from './components/Navbar';
 import Story from './components/Story';
 import Gallery from './components/Gallery';
@@ -10,13 +11,24 @@ import Earth from './components/worlds/Earth';
 import Exodus from './components/worlds/Exodus';
 import Default from './components/Default';
 
-class App extends Component{
-   render(){
+class App extends React.PureComponent{
+    constructor(props) {
+      super(props);
+      this.state = {
+         showPhotoNavbar: true
+      };
+    }
+    componentDidUpdate(props) {
+      let location = this.props.location.pathname.split('/');
+      let val = location[location.length-1];
+      this.setState({
+        showPhotoNavbar: val ? false : true
+      });
+    }
+   render(props){ 
       return(
          <div className="intro">
             <NavigationBar />
-         	{/* <h1>EXODUS</h1>
-            <img src="www/img/EXODUS_LOGO_BG01-1024x461.png" /> */}
             <Switch>
                <Route path="/earth" component={Earth} />
                <Route path="/exodus" component={Exodus} />
@@ -25,9 +37,12 @@ class App extends Component{
                <Route path="/gallery" component={Gallery} />
                <Route path="/community" component={Community} />
             </Switch>
+            <div id="photoNavbar">
+               {this.state.showPhotoNavbar && (<PhotoNavbar />)}
+            </div>
          </div>
       );
    }
 }
 
-export default App;
+export default withRouter(App);

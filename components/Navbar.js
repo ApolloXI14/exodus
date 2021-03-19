@@ -6,34 +6,34 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Collapse,
-  Container
+  Collapse
 } from 'reactstrap';
+import styles from '../less/Navbar.less';
 
 class NavigationBar extends Component {
   constructor(props) {
     super(props);
     this.toggleNav = this.toggleNav.bind(this);
     this.state = {
-      open: false
+      navOpen: false
     }
   };
 
   toggleNav() {
     this.setState({
-      open: !this.state.open
+      navOpen: !this.state.navOpen
     });
   };
 
   render() {
     const url = window.location.pathname;
     return (
-      <Navbar dark expand="md" className="nav-background" sticky="top">
+      <Navbar dark expand="md" className={ url === "/world" ? "bg-black nav-responsive" : "bg-black"} sticky="top">
         <NavbarBrand href="/">
           <img src="www/img/EXODUS_LOGO01-e1590806106934.png" alt="Exodus Nav Logo" />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggleNav} />
-        <Collapse isOpen={this.state.open} navbar>
+        <Collapse isOpen={this.state.navOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="px-3">
               <NavLink href="/world" className={ url !== "/world" ? "" : "active-tab"}>

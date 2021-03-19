@@ -1,3 +1,41 @@
-#imageDiv-flex {
-	display: none;
+.world-container {
+  margin-top: 20px;
+  position: relative;
+  max-width: 900px;
+}
+
+.top-image-container {
+  color: darkgray;
+  transition: all 0.3s linear;
+  filter: brightness(80%);
+}
+
+.top-image-container:hover {
+  color: white;
+  filter: brightness(110%);
+}
+
+.top-image {
+  clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s linear;
+}
+
+.bottom-image-container {
+  color: darkgray;
+  transition: all 0.3s linear;
+  filter: brightness(80%);
+}
+
+.bottom-image-container:hover {
+  color: white;
+  filter: brightness(110%);
+}
+
+.bottom-image {
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  width: 100%;
+  transition: all 0.3s linear;
+  position: absolute;
 }

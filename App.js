@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import World from './components/World.js';
-import Story from './components/Story.js';
-import Gallery from './components/Gallery.js';
-import Community from './components/Community.js';
 import { Route, Switch, withRouter } from 'react-router-dom';
-import PhotoNavbar from './components/PhotoNavbar';
 import 'bootstrap/dist/css/bootstrap.css';
+import PhotoNavbar from './components/PhotoNavbar';
 import NavigationBar from './components/Navbar';
+import Story from './components/Story';
+import Gallery from './components/Gallery';
+import Community from './components/Community';
+import World from './components/World';
+import Earth from './components/worlds/Earth';
+import Exodus from './components/worlds/Exodus';
 import Default from './components/Default';
 
 class App extends React.PureComponent{
@@ -28,13 +30,15 @@ class App extends React.PureComponent{
          <div className="intro">
             <NavigationBar />
             <Switch>
-                  <Route exact path="/world" component={World}/>
-                  <Route exact path="/story" component={Story}/>
-                  <Route exact path="/gallery" component={Gallery}/>
-                  <Route exact path="/community" component={Community}/>
-               </Switch>
+               <Route path="/earth" component={Earth} />
+               <Route path="/exodus" component={Exodus} />
+               <Route path="/world" component={World} />
+               <Route path="/story" component={Story} />
+               <Route path="/gallery" component={Gallery} />
+               <Route path="/community" component={Community} />
+            </Switch>
             <div id="photoNavbar">
-            {this.state.showPhotoNavbar && (<PhotoNavbar />)}
+               {this.state.showPhotoNavbar && (<PhotoNavbar />)}
             </div>
          </div>
       );

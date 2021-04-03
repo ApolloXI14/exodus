@@ -10,6 +10,7 @@ import World from './components/World';
 import Earth from './components/worlds/Earth';
 import Exodus from './components/worlds/Exodus';
 import Default from './components/Default';
+import styles from './less/App.less';
 
 class App extends React.PureComponent{
     constructor(props) {
@@ -27,7 +28,7 @@ class App extends React.PureComponent{
     }
    render(props){ 
       return(
-         <div className="intro">
+         <div id="AppDiv" className="intro" >
             <NavigationBar />
             <Switch>
                <Route path="/earth" component={Earth} />

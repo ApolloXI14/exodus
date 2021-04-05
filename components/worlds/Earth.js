@@ -5,7 +5,7 @@ import {
   NavItem
 } from 'reactstrap';
 import styles from '../../less/Earth.less';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 
 class Earth extends Component {
@@ -202,18 +202,18 @@ class Earth extends Component {
               <br />
 
               <hr className="bg-white" />
-                <Link to="creator" smooth={true}>
+                <ScrollLink to="creator" smooth={true}>
                   <span className="scroll-btn">Creator</span>
-                </Link> -
-                <Link to="destroyer" smooth={true}>
+                </ScrollLink> -
+                <ScrollLink to="destroyer" smooth={true}>
                   <span className="scroll-btn"> Destroyer</span>
-                </Link> -
-                <Link to="observer" smooth={true}>
+                </ScrollLink> -
+                <ScrollLink to="observer" smooth={true}>
                   <span className="scroll-btn"> Observer</span>
-                </Link> -
-                <Link to="preserver" smooth={true}>
+                </ScrollLink> -
+                <ScrollLink to="preserver" smooth={true}>
                   <span className="scroll-btn"> Preserver</span>
-                </Link>
+                </ScrollLink>
               <hr className="bg-white" />
 
               <br />

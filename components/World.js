@@ -8,13 +8,13 @@ class World extends Component {
       <div className="world-container container">
         <div className="top-image-container">
         <Link to="/earth">
-          <img src="../www/img/background/Earth-world-concept.jpg" className="top-image" />
+          <img src={IMGS_DIR + "background/Earth-world-concept.jpg"} className="top-image" />
         </Link>
         </div>
 
         <div className="bottom-image-container">
           <Link to="/exodus">
-            <img src="../www/img/background/Exodus-world-concept.jpg" className="bottom-image" />
+            <img src={IMGS_DIR + "background/Exodus-world-concept.jpg"} className="bottom-image" />
           </Link>
         </div>
       </div>

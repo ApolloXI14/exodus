@@ -12,11 +12,7 @@ export const ShadarrinModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody className="modal-body" style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/shadarrin-placeholder.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}>
+        <ModalBody className="modal-body map-background">
           <br />
           <hr className="bg-white" />
           <h1 className="text-center">SHADARRIN</h1>

@@ -657,12 +657,12 @@ class Exodus extends Component {
             <hr className="bg-white" />
 
             <div className="text-center">
-              <Link to="prime" smooth={true}>
+              <ScrollLink to="prime" smooth={true}>
                 <span className="scroll-btn">PRIME MAGIC</span>
-              </Link> –
-              <Link to="soul" smooth={true}>
+              </ScrollLink> –
+              <ScrollLink to="soul" smooth={true}>
                 <span className="scroll-btn"> SOUL MAGIC</span>
-              </Link>
+              </ScrollLink>
             </div>
 
             <hr className="bg-white" />

@@ -102,17 +102,7 @@ class Exodus extends Component {
 
   render() {
     return (
-      <Container
-        fluid
-        className="pt-3 p-5"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../www/img/background/Exodus-world-concept.jpg')",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed"
-        }}
-      >
+      <Container fluid className="pt-3 p-5 exodus-background">
         { this.state.renderedPage === "" || this.state.renderedPage === "Map" ? 
           <h1 className="text-white">THE WORLD OF EXODUS</h1>
           : null

@@ -12,7 +12,7 @@ export const ShadarrinModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody className="modal-body map-background">
+        <ModalBody className="modal-body shadarrin-bg">
           <br />
           <hr className="bg-white" />
           <h1 className="text-center">SHADARRIN</h1>
@@ -59,11 +59,7 @@ export const BaldemingModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody className="modal-body" style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/baldeming-placeholder.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}>
+        <ModalBody className="modal-body baldeming-bg">
           <br />
           <hr className="bg-white" />
           <h1 className="text-center">BALDEMING</h1>
@@ -101,11 +97,7 @@ export const JiranModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody className="modal-body" style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../www/img/jiran-placeholder.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}>
+        <ModalBody className="modal-body jiran-bg">
           <br />
           <hr className="bg-white" />
           <h1 className="text-center">JIRAN</h1>

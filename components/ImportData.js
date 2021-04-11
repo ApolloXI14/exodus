@@ -27,7 +27,7 @@ export function ImportData(WrappedComponent, dataArray) {
 	      function importAll(req) {
 	        let txtfiles = []; // 2D array in [['', ...], ''] form, to get array of metadata (parsed from fileName) and file content
 	        req.keys().map((fileName, index) => {
-	          txtfiles.push( [getFileMetaData(fileName), parse(req(fileName)) ] ); });
+	          txtfiles.push( [fileName, parse(req(fileName)) ] ); });
 	          return txtfiles;
 	      }
 	      this.setState((state, props) => ({

@@ -9,7 +9,7 @@ class StoryMenu extends Component{
       <ul>
         <ul>
           {this.props.dataArray.map((entry, index) => (
-            <li key={index++}><Link to={`story/${index++}`}>{entry[0][0]}</Link></li>
+            <li key={index++}><Link to={`story/${index++}`}>{entry[0]}</Link></li>
             ))}
         </ul>
       </ul>

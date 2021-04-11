@@ -97,7 +97,8 @@ module.exports = {
       hash: true
     }),
     new webpack.DefinePlugin({
-      IMGS_DIR: JSON.stringify('../www/img/')
+      IMGS_DIR: JSON.stringify('../www/img/'),
+      STORY_DIR: JSON.stringify('../www/txt/')
     })
   ]
 }

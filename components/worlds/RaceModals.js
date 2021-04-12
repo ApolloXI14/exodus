@@ -12,13 +12,7 @@ export const WildkinModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody className="race-modal-body" style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../../www/img/wildkin.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed"
-        }}>
+        <ModalBody className="race-modal-body wildkin-bg">
           <br />
           <hr className="bg-white" />
           <h1 className="text-center">Wildkin</h1>
@@ -193,13 +187,7 @@ export const LivriOluModal = props => {
     <div>
       <Modal isOpen={isOpen} toggle={toggle}>
         <ModalHeader toggle={toggle} className="mx-auto close-modal" style={{padding:'2px'}}></ModalHeader>
-        <ModalBody className="race-modal-body" style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../../www/img/livri-olu.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed"
-        }}>
+        <ModalBody className="race-modal-body livri-olu-bg">
           <br />
           <hr className="bg-white" />
           <h1 className="text-center">The Liv'ri & The Olu</h1>

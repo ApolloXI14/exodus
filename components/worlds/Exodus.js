@@ -5,7 +5,7 @@ import {
   NavItem,
   Button
 } from 'reactstrap';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import styles from '../../less/Exodus.less';
 import { NavLink } from 'react-router-dom';
 import { ShadarrinModal, BaldemingModal, JiranModal } from './MapModals';
@@ -102,17 +102,7 @@ class Exodus extends Component {
 
   render() {
     return (
-      <Container
-        fluid
-        className="pt-3 p-5"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../www/img/background/Exodus-world-concept.jpg')",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed"
-        }}
-      >
+      <Container fluid className="pt-3 p-5 exodus-background">
         { this.state.renderedPage === "" || this.state.renderedPage === "Map" ? 
           <h1 className="text-white">THE WORLD OF EXODUS</h1>
           : null
@@ -260,59 +250,59 @@ class Exodus extends Component {
 
               <div className="text-center">
                 <p className="text-white mt-3"><b>BLOODED RACES</b></p>
-                <Link to="human" smooth={true}>
+                <ScrollLink to="human" smooth={true}>
                   <span className="scroll-btn">HUMAN</span>
-                </Link> –
-                <Link to="wildkin" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="wildkin" smooth={true}>
                   <span className="scroll-btn"> WILDKIN</span>
-                </Link> –
-                <Link to="kogg" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="kogg" smooth={true}>
                   <span className="scroll-btn"> KOGG</span>
-                </Link> –
-                <Link to="urul" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="urul" smooth={true}>
                   <span className="scroll-btn"> URUL</span>
-                </Link> –
-                <Link to="amiran" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="amiran" smooth={true}>
                   <span className="scroll-btn"> AMIRAN</span>
-                </Link> –
-                <Link to="nom" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="nom" smooth={true}>
                   <span className="scroll-btn"> NOM</span>
-                </Link> –
-                <Link to="liv'ri-olu" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="liv'ri-olu" smooth={true}>
                   <span className="scroll-btn"> LIV’RI / OLU</span>
-                </Link>
+                </ScrollLink>
 
                 <p className="text-white mt-3"><b>SANGUI’JI</b></p>
-                <Link to="d'jinn" smooth={true}>
+                <ScrollLink to="d'jinn" smooth={true}>
                   <span className="scroll-btn">D’JINN</span>
-                </Link> –
-                <Link to="fae" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="fae" smooth={true}>
                   <span className="scroll-btn"> FAE</span>
-                </Link> –
-                <Link to="scions" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="scions" smooth={true}>
                   <span className="scroll-btn"> SCIONS</span>
-                </Link> –
-                <Link to="golem" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="golem" smooth={true}>
                   <span className="scroll-btn"> GOLEMS</span>
-                </Link>
+                </ScrollLink>
 
                 <p className="text-white mt-3"><span id="human"></span><b>BLIGHTED</b></p>
-                <Link to="werebeasts" smooth={true}>
+                <ScrollLink to="werebeasts" smooth={true}>
                   <span className="scroll-btn">WEREBEASTS</span>
                   {/* <span id="werebeasts"></span> */}
-                </Link> –
-                <Link to="akkad'ai" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="akkad'ai" smooth={true}>
                   <span className="scroll-btn"> AKKAD’AI</span>
                   {/* <span id="akkad'ai"></span> */}
-                </Link> –
-                <Link to="netra-zazanta" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="netra-zazanta" smooth={true}>
                   <span className="scroll-btn"> NETRA-ZAZANTA</span>
                   {/* <span id="netra-zazanta"></span> */}
-                </Link> –
-                <Link to="the-fell" smooth={true}>
+                </ScrollLink> –
+                <ScrollLink to="the-fell" smooth={true}>
                   <span className="scroll-btn"> THE FELL</span>
                   {/* <span id="the-fell"></span> */}
-                </Link>
+                </ScrollLink>
               </div>
 
               <hr className="bg-white" />
@@ -667,12 +657,12 @@ class Exodus extends Component {
             <hr className="bg-white" />
 
             <div className="text-center">
-              <Link to="prime" smooth={true}>
+              <ScrollLink to="prime" smooth={true}>
                 <span className="scroll-btn">PRIME MAGIC</span>
-              </Link> –
-              <Link to="soul" smooth={true}>
+              </ScrollLink> –
+              <ScrollLink to="soul" smooth={true}>
                 <span className="scroll-btn"> SOUL MAGIC</span>
-              </Link>
+              </ScrollLink>
             </div>
 
             <hr className="bg-white" />

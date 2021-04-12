@@ -31,10 +31,11 @@ class App extends React.PureComponent{
          <div id="AppDiv" className="intro" >
             <NavigationBar />
             <Switch>
-               <Route path="/earth" component={Earth} />
-               <Route path="/exodus" component={Exodus} />
-               <Route path="/world" component={World} />
-               <Route path="/story" component={Story} />
+               <Route exact path="/earth" component={Earth} />
+               <Route exact path="/exodus" component={Exodus} />
+               <Route exact path="/world" component={World} />
+               <Route exact path="/story" component={Story} />
+               <Route exact path="/story/:id" component={Story} />
                <Route path="/gallery" component={Gallery} />
                <Route path="/community" component={Community} />
             </Switch>

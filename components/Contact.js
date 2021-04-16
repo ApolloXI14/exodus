@@ -10,6 +10,7 @@ import {
   Button,
   Alert
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import styles from '../less/Contact.less';
 
 class Contact extends Component {
@@ -35,9 +36,21 @@ class Contact extends Component {
           <Col lg="6">
             <h4 className="py-4">Get to know me by visiting my social media</h4>
             <Row>
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/Facebook-Emblem.png" alt="Facebook" className="socialMediaImg" /></Col>
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/Instagram-Emblem.png" alt="Instagram" className="socialMediaImg" /></Col>
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/YouTube-Emblem.png" alt="YouTube" className="socialMediaImg" /></Col>
+              <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+                <a href="https://www.facebook.com/chris.d.3150" target="_blank" rel="noopener noreferrer">
+                  <img src="../www/img/Facebook-Emblem.png" alt="Facebook" className="socialMediaImg" />
+                </a>
+              </Col>
+              <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+                <a href="https://www.instagram.com/virtuoso_lume/" target="_blank" rel="noopener noreferrer">
+                  <img src="../www/img/Instagram-Emblem.png" alt="Instagram" className="socialMediaImg" />
+                </a>
+              </Col>
+              <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+                <a href="https://www.youtube.com/channel/UCj8pYnnOtWp5OKHzVOh0R3A" target="_blank" rel="noopener noreferrer">
+                  <img src="../www/img/YouTube-Emblem.png" alt="YouTube" className="socialMediaImg" />
+                </a>
+              </Col>
             </Row>
           </Col>
 

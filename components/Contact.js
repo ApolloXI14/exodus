@@ -33,16 +33,16 @@ class Contact extends Component {
 
         <Row>
           <Col lg="6">
-            <h4 className="pt-4">Get to know me by visiting my social media</h4>
+            <h4 className="py-4">Get to know me by visiting my social media</h4>
             <Row>
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/Facebook-Emblem.png" alt="Facebook" className="fbImg" /></Col>
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/Instagram-Emblem.png" alt="Instagram" className="igImg" /></Col>
-              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/YouTube-Emblem.png" alt="YouTube" className="ytImg" /></Col>
+              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/Facebook-Emblem.png" alt="Facebook" className="socialMediaImg" /></Col>
+              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/Instagram-Emblem.png" alt="Instagram" className="socialMediaImg" /></Col>
+              <Col xs={4} sm={4} md={4} lg={4} xl={4}><img src="../www/img/YouTube-Emblem.png" alt="YouTube" className="socialMediaImg" /></Col>
             </Row>
           </Col>
 
           <Col lg="6">
-            <h4 className="pt-4">Or contact me directly by filling out this form</h4>
+            <h4 className="py-4">Or contact me directly by filling out this form</h4>
             <Form onSubmit={() => console.log("Form Submitted")}>
               <FormGroup row>
                 <Label for="from_name" sm={2}>Name</Label>

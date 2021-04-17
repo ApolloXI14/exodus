@@ -10,8 +10,8 @@ import {
   Button,
   Alert
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import styles from '../less/Contact.less';
+import emailjs from 'emailjs-com';
 
 const SocialMediaIcon = props => {
   const { url, img } = props;
@@ -25,6 +25,47 @@ const SocialMediaIcon = props => {
 };
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+    this.sendEmail = this.sendEmail.bind(this);
+    this.state = {
+      from_name: "",
+      from_email: "",
+      message: "",
+      submitted: false
+    };
+  };
+
+  handleChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.EMAILJS_USER_ID
+      ) 
+      .then(res => {
+        console.log(res.text);
+      }, err => {
+        console.log(err.text);
+      });
+
+    this.setState({
+      from_name: "",
+      from_email: "",
+      message: "",
+      submitted: true
+    });
+  };
+
   render() {
     return (
       <Container fluid id="contactCompDiv" className="pt-3 p-5">
@@ -70,15 +111,15 @@ class Contact extends Component {
 
           <Col lg="6">
             <h4 className="py-4">Or contact me directly by filling out this form</h4>
-            <Form onSubmit={() => console.log("Form Submitted")}>
+            <Form onSubmit={this.sendEmail}>
               <FormGroup row>
                 <Label for="from_name" sm={2}>Name</Label>
                 <Col sm={10}>
                   <Input
                     type="text"
                     name="from_name"
-                    // onChange={this.handleChange}
-                    // value={this.state.from_name}
+                    onChange={this.handleChange}
+                    value={this.state.from_name}
                     required
                   />
                 </Col>
@@ -90,8 +131,8 @@ class Contact extends Component {
                   <Input
                     type="text"
                     name="from_email"
-                    // onChange={this.handleChange}
-                    // value={this.state.from_email}
+                    onChange={this.handleChange}
+                    value={this.state.from_email}
                     required
                   />
                 </Col>
@@ -103,8 +144,8 @@ class Contact extends Component {
                   <Input
                     type="textarea"
                     name="message"
-                    // onChange={this.handleChange}
-                    // value={this.state.message}
+                    onChange={this.handleChange}
+                    value={this.state.message}
                     required
                   />
                 </Col>
@@ -112,25 +153,17 @@ class Contact extends Component {
 
               <FormGroup row>
                 <Col sm={10}>
-                  <Button color="primary">
-                    Send Email
-                  </Button>
-                </Col>
-              </FormGroup>
-
-              {/* <FormGroup row>
-                <Col sm={10}>
                   {
                     !this.state.submitted ?
-                    <Button color="primary">
+                    <Button block color="primary">
                       Send Email
                     </Button> :
-                    <Alert color="success" style={styles.alert}>
-                      Message Sent!
+                    <Alert className="msgSentAlert">
+                      Message Sent
                     </Alert>
                   }
                 </Col>
-              </FormGroup> */}
+              </FormGroup>
             </Form>
           </Col>
         </Row>

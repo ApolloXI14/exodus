@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './main.js',
@@ -98,6 +99,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       IMGS_DIR: JSON.stringify('../www/img/')
-    })
+    }),
+    new Dotenv()
   ]
 }

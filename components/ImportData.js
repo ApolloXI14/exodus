@@ -14,24 +14,20 @@ export function ImportData(WrappedComponent, dataArray) {
 		}
 
 		componentDidMount(props) {
-			function getFileMetaData(str) { // TODO: Export to own utility later, to de-duplicate
-	        let strArr = str.split('__');
-	        let fileDate = strArr[0];
-	        fileDate = fileDate.replace('./', '');
-	        fileDate =  fileDate.slice(2,4) + '/' + fileDate.slice(4,6) + '/' + fileDate.slice(0,2);
-	        let fileName = strArr[1];
-	        fileName = fileName.replace('.txt', '');
-	        fileName = fileName.replace(/_/g, ' ');
-	        return [fileName, fileDate];
-	      }
 	      function importAll(req) {
 	        let txtfiles = []; // 2D array in [['', ...], ''] form, to get array of metadata (parsed from fileName) and file content
-	        req.keys().map((fileName, index) => {
-	          txtfiles.push( [fileName, parse(req(fileName)) ] ); });
+	        var fileArray = req.keys().map((item) => {
+			    return {
+			        fileName: item,
+			        entryId: Number(item.replace('.txt', '').split('_')[1]) || 0
+			    }
+			}).sort((a,b) => a.entryId - b.entryId);
+	        fileArray.map((item, index) => {
+	          txtfiles.push( [item.fileName, parse(req(item.fileName)) ] ); });
 	          return txtfiles;
 	      }
 	      this.setState((state, props) => ({
-	      	dataArray: importAll(this.props.req).reverse()
+	      	dataArray: importAll(this.props.req)
 	      }));
 		}
 		componentDidUpdate(prevProps) {

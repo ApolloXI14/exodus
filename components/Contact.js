@@ -82,10 +82,10 @@ class Contact extends Component {
           blended in with our comic plans.
           This led us to evolve Exodus into a universal roleplaying experience that not
           even I could have imagined.
-        </p>
+        </p><br/>
 
         <Row>
-          <Col lg="6">
+          <Col lg="6" className="text-center py-2">
             <h4 className="py-4">Get to know me by visiting my social media</h4>
             <Row>
               <Col xs={4} sm={4} md={4} lg={4} xl={4}>
@@ -109,60 +109,52 @@ class Contact extends Component {
             </Row>
           </Col>
 
-          <Col lg="6">
-            <h4 className="py-4">Or contact me directly by filling out this form</h4>
+          <Col lg="6" className="text-center py-2">
+            <h4 className="py-4">Contact me directly by filling out this form</h4>
             <Form onSubmit={this.sendEmail}>
-              <FormGroup row>
-                <Label for="from_name" sm={2}>Name</Label>
-                <Col sm={10}>
-                  <Input
-                    type="text"
-                    name="from_name"
-                    onChange={this.handleChange}
-                    value={this.state.from_name}
-                    required
-                  />
-                </Col>
+              <FormGroup>
+                <Input
+                  type="text"
+                  name="from_name"
+                  onChange={this.handleChange}
+                  value={this.state.from_name}
+                  required
+                  placeholder="Name"
+                />
               </FormGroup>
 
-              <FormGroup row>
-                <Label for="from_email" sm={2}>Email</Label>
-                <Col sm={10}>
-                  <Input
-                    type="text"
-                    name="from_email"
-                    onChange={this.handleChange}
-                    value={this.state.from_email}
-                    required
-                  />
-                </Col>
+              <FormGroup>
+                <Input
+                  type="text"
+                  name="from_email"
+                  onChange={this.handleChange}
+                  value={this.state.from_email}
+                  required
+                  placeholder="Email"
+                />
               </FormGroup>
 
-              <FormGroup row>
-                <Label for="message" sm={2}>Message</Label>
-                <Col sm={10}>
-                  <Input
-                    type="textarea"
-                    name="message"
-                    onChange={this.handleChange}
-                    value={this.state.message}
-                    required
-                  />
-                </Col>
+              <FormGroup>
+                <Input
+                  type="textarea"
+                  name="message"
+                  onChange={this.handleChange}
+                  value={this.state.message}
+                  required
+                  placeholder="Message"
+                />
               </FormGroup>
 
-              <FormGroup row>
-                <Col sm={10}>
-                  {
-                    !this.state.submitted ?
-                    <Button block color="primary">
-                      Send Email
-                    </Button> :
-                    <Alert className="msgSentAlert">
-                      Message Sent
-                    </Alert>
-                  }
-                </Col>
+              <FormGroup>
+                {
+                  !this.state.submitted ?
+                  <Button block color="primary">
+                    Email Me
+                  </Button> :
+                  <Alert className="msgSentAlert">
+                    Message Sent
+                  </Alert>
+                }
               </FormGroup>
             </Form>
           </Col>

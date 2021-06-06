@@ -22,8 +22,15 @@ export function ImportData(WrappedComponent, dataArray) {
 			        entryId: Number(item.replace('.txt', '').split('_')[1]) || 0
 			    }
 			}).sort((a,b) => a.entryId - b.entryId);
+			const formatFileName = (fileName) => {
+				fileName = fileName.replace('./', '');
+				if (fileName.indexOf('_') !== 1) {
+					fileName = fileName.replace('_', ' ');
+				}
+				return fileName.substr(0,1).toUpperCase() + fileName.substr(1).replace('.txt', '');
+			};
 	        fileArray.map((item, index) => {
-	          txtfiles.push( [item.fileName, parse(req(item.fileName)) ] ); });
+	          txtfiles.push( [formatFileName(item.fileName), parse(req(item.fileName)) ] ); });
 	          return txtfiles;
 	      }
 	      this.setState((state, props) => ({

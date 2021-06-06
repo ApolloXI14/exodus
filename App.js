@@ -19,7 +19,14 @@ class App extends React.PureComponent{
          showPhotoNavbar: true
       };
     }
+    setBackgroundImg() {
+      document.body.style.backgroundImage = "url('www/img/background/background.jpg')";
+    }
+    componentDidMount(props) {
+      this.setBackgroundImg();
+    }
     componentDidUpdate(props) {
+      this.setBackgroundImg();
       let location = this.props.location.pathname.split('/');
       let val = location[location.length-1];
       this.setState({
@@ -28,7 +35,7 @@ class App extends React.PureComponent{
     }
    render(props){ 
       return(
-         <div id="AppDiv" className="intro" >
+         <div className="intro" >
             <NavigationBar />
             <Switch>
                <Route exact path="/earth" component={Earth} />

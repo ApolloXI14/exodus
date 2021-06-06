@@ -17,7 +17,14 @@ class Story extends Component {
       dataArray: []
     };
   }
+  setBackgroundImg() {
+  	document.body.style.backgroundImage = "url(../www/img/background/bg.jpg)";
+  }
+  componentDidMount() {
+  	this.setBackgroundImg();
+  }
   componentDidUpdate(prevProps) {
+  	this.setBackgroundImg();
     if (prevProps.match.params !== this.props.match.params) {
       const currentEntryId = this.props.match.params.id ? Number(this.props.match.params.id) -1 : null; // minusShifting for array
         this.setState((state, props) => ({
@@ -29,7 +36,7 @@ class Story extends Component {
       const StoryMenuWithData = ImportData(StoryMenu, this.state.req);
       const StoryEntryWithData = ImportData(StoryEntry, this.state.req);
       return (
-        <div id="storyCompDiv">
+        <div>
               {this.state.currentEntryId === null ? 
               <StoryMenuWithData req={this.state.req} array={this.state.dataArray} /> :
               <StoryEntryWithData req={this.state.req} dataArray={this.state.dataArray} lastEntryId={this.state.dataArray.length} />}

@@ -18,6 +18,10 @@ class PhotoNavbar extends React.PureComponent {
           <img id="exodusLogo" src={IMGS_DIR + "Community-Link-Image.png"} />
         </Link>
       </div>
+
+
+
+      
     );
 	}
 }

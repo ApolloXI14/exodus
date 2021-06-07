@@ -98,8 +98,8 @@ module.exports = {
       hash: true
     }),
     new webpack.DefinePlugin({
-      IMGS_DIR: JSON.stringify('../www/img/')
-    }),
-    new Dotenv()
+      IMGS_DIR: JSON.stringify('../www/img/'),
+      STORY_DIR: JSON.stringify('../www/txt/')
+    })
   ]
 }

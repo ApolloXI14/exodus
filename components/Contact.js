@@ -125,7 +125,7 @@ class Contact extends Component {
 
               <FormGroup>
                 <Input
-                  type="text"
+                  type="email"
                   name="from_email"
                   onChange={this.handleChange}
                   value={this.state.from_email}

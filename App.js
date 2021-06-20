@@ -20,7 +20,14 @@ class App extends React.PureComponent{
          showPhotoNavbar: true
       };
     }
+    setBackgroundImg() {
+      document.body.style.backgroundImage = "url('www/img/background/background.jpg')";
+    }
+    componentDidMount(props) {
+      this.setBackgroundImg();
+    }
     componentDidUpdate(props) {
+      this.setBackgroundImg();
       let location = this.props.location.pathname.split('/');
       let val = location[location.length-1];
       this.setState({
@@ -29,13 +36,14 @@ class App extends React.PureComponent{
     }
    render(props){ 
       return(
-         <div id="AppDiv" className="intro" >
+         <div className="intro" >
             <NavigationBar />
             <Switch>
-               <Route path="/earth" component={Earth} />
-               <Route path="/exodus" component={Exodus} />
-               <Route path="/world" component={World} />
-               <Route path="/story" component={Story} />
+               <Route exact path="/earth" component={Earth} />
+               <Route exact path="/exodus" component={Exodus} />
+               <Route exact path="/world" component={World} />
+               <Route exact path="/story" component={Story} />
+               <Route exact path="/story/:id" component={Story} />
                <Route path="/gallery" component={Gallery} />
                <Route path="/community" component={Community} />
                <Route path="/contact" component={Contact} />

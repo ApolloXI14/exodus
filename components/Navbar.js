@@ -54,8 +54,8 @@ class NavigationBar extends Component {
             </NavItem>
             
             <NavItem className="px-3">
-              <NavLink href="/community" className={ url !== "/community" ? "" : "active-tab"}>
-                Community
+              <NavLink href="/contact" className={ url !== "/contact" ? "" : "active-tab"}>
+                Contact
               </NavLink>
             </NavItem>
           </Nav>

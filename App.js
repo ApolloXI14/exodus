@@ -6,6 +6,7 @@ import NavigationBar from './components/Navbar';
 import Story from './components/Story';
 import Gallery from './components/Gallery';
 import Community from './components/Community';
+import Contact from './components/Contact';
 import World from './components/World';
 import Earth from './components/worlds/Earth';
 import Exodus from './components/worlds/Exodus';
@@ -45,6 +46,7 @@ class App extends React.PureComponent{
                <Route exact path="/story/:id" component={Story} />
                <Route path="/gallery" component={Gallery} />
                <Route path="/community" component={Community} />
+               <Route path="/contact" component={Contact} />
             </Switch>
             <div id="photoNavbar">
                {this.state.showPhotoNavbar && (<PhotoNavbar />)}

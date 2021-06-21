@@ -45,6 +45,8 @@
     "css": "^3.0.0",
     "css-loader": "^5.0.1",
     "css-minimizer-webpack-plugin": "^1.1.5",
+    "dotenv-webpack": "^7.0.2",
+    "emailjs-com": "^2.6.4",
     "file-loader": "^6.2.0",
     "file-rawtxt-loader": "^1.0.2",
     "find-cache-dir": "^3.3.1",

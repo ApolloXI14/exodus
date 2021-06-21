@@ -91,19 +91,19 @@ class Contact extends Component {
               <Col xs={4} sm={4} md={4} lg={4} xl={4}>
                 <SocialMediaIcon
                   url={"https://www.facebook.com/chris.d.3150"}
-                  img={"../www/img/Facebook-Emblem.png"}
+                  img={IMGS_DIR + "Facebook-Emblem.png"}
                 />
               </Col>
               <Col xs={4} sm={4} md={4} lg={4} xl={4}>
                 <SocialMediaIcon
                   url={"https://www.instagram.com/virtuoso_lume/"}
-                  img={"../www/img/Instagram-Emblem.png"}
+                  img={IMGS_DIR + "Instagram-Emblem.png"}
                 />
               </Col>
               <Col xs={4} sm={4} md={4} lg={4} xl={4}>
                 <SocialMediaIcon
                   url={"https://www.youtube.com/channel/UCj8pYnnOtWp5OKHzVOh0R3A"}
-                  img={"../www/img/YouTube-Emblem.png"}
+                  img={IMGS_DIR + "YouTube-Emblem.png"}
                 />
               </Col>
             </Row>
@@ -125,7 +125,7 @@ class Contact extends Component {
 
               <FormGroup>
                 <Input
-                  type="text"
+                  type="email"
                   name="from_email"
                   onChange={this.handleChange}
                   value={this.state.from_email}

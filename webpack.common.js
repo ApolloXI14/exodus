@@ -100,6 +100,7 @@ module.exports = {
     new webpack.DefinePlugin({
       IMGS_DIR: JSON.stringify('../www/img/'),
       STORY_DIR: JSON.stringify('../www/txt/')
-    })
+    }),
+    new Dotenv()
   ]
 }

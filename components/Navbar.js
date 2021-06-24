@@ -5,9 +5,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   Collapse
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import styles from '../less/Navbar.less';
 
 class NavigationBar extends Component {
@@ -36,27 +36,27 @@ class NavigationBar extends Component {
         <Collapse isOpen={this.state.navOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="px-3">
-              <NavLink href="/world" className={ url !== "/world" ? "" : "active-tab"}>
+              <Link to="/world" className={ url !== "/world" ? "" : "active-tab"}>
                 World
-              </NavLink>
+              </Link>
             </NavItem>
 
             <NavItem className="px-3">
-              <NavLink href="/story" className={ url !== "/story" ? "" : "active-tab"}>
+              <Link to="/story" className={ url !== "/story" ? "" : "active-tab"}>
                 Story
-              </NavLink>
+              </Link>
             </NavItem>
 
             <NavItem className="px-3">
-              <NavLink href="/gallery" className={ url !== "/gallery" ? "" : "active-tab"}>
+              <Link to="/gallery" className={ url !== "/gallery" ? "" : "active-tab"}>
                 Gallery
-              </NavLink>
+              </Link>
             </NavItem>
             
             <NavItem className="px-3">
-              <NavLink href="/contact" className={ url !== "/contact" ? "" : "active-tab"}>
+              <Link to="/contact" className={ url !== "/contact" ? "" : "active-tab"}>
                 Contact
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>

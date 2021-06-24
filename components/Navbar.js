@@ -35,26 +35,26 @@ class NavigationBar extends Component {
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.navOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem className="px-3">
-              <Link to="/world" className={ url !== "/world" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/world" className={ url !== "/world" ? "navbar-link" : "navbar-link active-tab"}>
                 World
               </Link>
             </NavItem>
 
-            <NavItem className="px-3">
-              <Link to="/story" className={ url !== "/story" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/story" className={ url !== "/story" ? "navbar-link" : "navbar-link active-tab"}>
                 Story
               </Link>
             </NavItem>
 
-            <NavItem className="px-3">
-              <Link to="/gallery" className={ url !== "/gallery" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/gallery" className={ url !== "/gallery" ? "navbar-link" : "navbar-link active-tab"}>
                 Gallery
               </Link>
             </NavItem>
             
-            <NavItem className="px-3">
-              <Link to="/contact" className={ url !== "/contact" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/contact" className={ url !== "/contact" ? "navbar-link" : "navbar-link active-tab"}>
                 Contact
               </Link>
             </NavItem>

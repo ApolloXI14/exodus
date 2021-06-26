@@ -5,9 +5,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   Collapse
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import styles from '../less/Navbar.less';
 
 class NavigationBar extends Component {
@@ -35,28 +35,28 @@ class NavigationBar extends Component {
         <NavbarToggler onClick={this.toggleNav} />
         <Collapse isOpen={this.state.navOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem className="px-3">
-              <NavLink href="/world" className={ url !== "/world" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/world" className={ url !== "/world" ? "navbar-link" : "navbar-link active-tab"}>
                 World
-              </NavLink>
+              </Link>
             </NavItem>
 
-            <NavItem className="px-3">
-              <NavLink href="/story" className={ url !== "/story" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/story" className={ url !== "/story" ? "navbar-link" : "navbar-link active-tab"}>
                 Story
-              </NavLink>
+              </Link>
             </NavItem>
 
-            <NavItem className="px-3">
-              <NavLink href="/gallery" className={ url !== "/gallery" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/gallery" className={ url !== "/gallery" ? "navbar-link" : "navbar-link active-tab"}>
                 Gallery
-              </NavLink>
+              </Link>
             </NavItem>
             
-            <NavItem className="px-3">
-              <NavLink href="/contact" className={ url !== "/contact" ? "" : "active-tab"}>
+            <NavItem className="px-4">
+              <Link to="/contact" className={ url !== "/contact" ? "navbar-link" : "navbar-link active-tab"}>
                 Contact
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
